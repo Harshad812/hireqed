@@ -43,18 +43,17 @@ export const Button: FC<ButtonProps> = ({
   ...props
 }) => {
   const baseStyle =
-    "py-[16px] px-[32px] text-base font-semibold rounded-lg transition transform active:scale-95";
+    "py-4 px-8 text-base font-medium rounded-lg";
   const disabledStyle =
     disabled || loading ? "opacity-50 cursor-not-allowed" : "";
 
   // Safe dynamic colors for Tailwind
-  const colorClass = `text-${color} ${
-    variant === "fill" || variant === "outline" ? `bg-${color} ` : ""
-  }border-${color}`;
+  const colorClass = `text-${color} ${variant === "fill" || variant === "outline" ? `bg-${color} ` : ""
+    }border-${color}`;
 
   const buttonStyles = {
-    fill: `${colorClass} text-transparent border-2`, // Make text transparent
-    outline: `bg-transparent ${colorClass} border-2`, // Transparent background, color on text and border
+    fill: `${colorClass} text-transparent border`, // Make text transparent
+    outline: `bg-transparent ${colorClass} border`, // Transparent background, color on text and border
     text: `bg-transparent ${colorClass} border-none`, // Only color on text, transparent background
     none: "bg-transparent text-gray-600 border-none", // Default style
   };
