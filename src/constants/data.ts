@@ -1,4 +1,5 @@
 import {
+  ClientImg,
   CplusplusLogo,
   CsSarpLogo,
   DartLogo,
@@ -53,6 +54,12 @@ export const languagesIconData = [
     { id: 14, logo: KotlinLogo, alt: "kotlin-logo" },
   ],
   [
+    { id: 9, logo: RLogo, alt: "r-logo" },
+    { id: 10, logo: JavaLogo, alt: "java-logo" },
+    { id: 11, logo: DartLogo, alt: "dart-logo" },
+    { id: 12, logo: PhpLogo, alt: "php-logo" },
+    { id: 13, logo: SwiftLogo, alt: "swift-logo" },
+    { id: 14, logo: KotlinLogo, alt: "kotlin-logo" },
     { id: 1, logo: PythonLogo, alt: "python-logo" },
     { id: 2, logo: RustLogo, alt: "rust-logo" },
     { id: 3, logo: JavascriptLogo, alt: "javascript-logo" },
@@ -61,12 +68,6 @@ export const languagesIconData = [
     { id: 6, logo: CplusplusLogo, alt: "c-plus-logo" },
     { id: 7, logo: RubyLogo, alt: "ruby-logo" },
     { id: 8, logo: GoLogo, alt: "go-logo" },
-    { id: 9, logo: RLogo, alt: "r-logo" },
-    { id: 10, logo: JavaLogo, alt: "java-logo" },
-    { id: 11, logo: DartLogo, alt: "dart-logo" },
-    { id: 12, logo: PhpLogo, alt: "php-logo" },
-    { id: 13, logo: SwiftLogo, alt: "swift-logo" },
-    { id: 14, logo: KotlinLogo, alt: "kotlin-logo" },
   ],
   [
     { id: 1, logo: PythonLogo, alt: "python-logo" },
@@ -85,12 +86,6 @@ export const languagesIconData = [
     { id: 14, logo: KotlinLogo, alt: "kotlin-logo" },
   ],
   [
-    { id: 1, logo: PythonLogo, alt: "python-logo" },
-    { id: 2, logo: RustLogo, alt: "rust-logo" },
-    { id: 3, logo: JavascriptLogo, alt: "javascript-logo" },
-    { id: 4, logo: TypescriptLogo, alt: "typescript-logo" },
-    { id: 5, logo: CsSarpLogo, alt: "c-sarp-logo" },
-    { id: 6, logo: CplusplusLogo, alt: "c-plus-logo" },
     { id: 7, logo: RubyLogo, alt: "ruby-logo" },
     { id: 8, logo: GoLogo, alt: "go-logo" },
     { id: 9, logo: RLogo, alt: "r-logo" },
@@ -99,6 +94,12 @@ export const languagesIconData = [
     { id: 12, logo: PhpLogo, alt: "php-logo" },
     { id: 13, logo: SwiftLogo, alt: "swift-logo" },
     { id: 14, logo: KotlinLogo, alt: "kotlin-logo" },
+    { id: 1, logo: PythonLogo, alt: "python-logo" },
+    { id: 2, logo: RustLogo, alt: "rust-logo" },
+    { id: 3, logo: JavascriptLogo, alt: "javascript-logo" },
+    { id: 4, logo: TypescriptLogo, alt: "typescript-logo" },
+    { id: 5, logo: CsSarpLogo, alt: "c-sarp-logo" },
+    { id: 6, logo: CplusplusLogo, alt: "c-plus-logo" },
   ],
   [
     { id: 1, logo: PythonLogo, alt: "python-logo" },
@@ -206,5 +207,29 @@ export const whyUsData = [
     title: "User-Friendly Experience",
     description:
       "Navigate our intuitive platform with ease, filtering based on your specific requirements and managing engagements seamlessly.",
+  },
+];
+
+export const testimonials = [
+  {
+    image: ClientImg, // Replace with actual image import or path
+    feedback:
+      "HireQED made finding the right talent effortless. Their platform connected us with top professionals in no time, allowing us to focus on delivering results.",
+    name: "John S.",
+    position: "Project Manager at Tech Innovators",
+  },
+  {
+    image: ClientImg,
+    feedback:
+      "The experience with HireQED was seamless and professional. We found candidates that exceeded our expectations.",
+    name: "Emily R.",
+    position: "HR Lead at Solutions Co.",
+  },
+  {
+    image: ClientImg,
+    feedback:
+      "An excellent platform for recruitment. The team was supportive, and the results were outstanding.",
+    name: "Michael B.",
+    position: "CEO of StartupX",
   },
 ];

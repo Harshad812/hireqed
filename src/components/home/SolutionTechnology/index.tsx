@@ -1,8 +1,10 @@
 "use client";
 
+import React, { FC, useRef } from "react";
 import Image from "next/image";
-import { Tabs } from "@/components";
-import { FC } from "react";
+import Slider, { Settings } from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 interface TitleData {
   id: number;
@@ -24,63 +26,65 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
   titleData,
   languagesIconData,
 }) => {
+  const sliderRef = useRef<Slider | null>(null);
+
+  const sliderSettings: Settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    adaptiveHeight: true,
+  };
+
+  const handleMenuClick = (index: number) => {
+    if (sliderRef.current) {
+      sliderRef.current.slickGoTo(index);
+    }
+  };
+
   return (
     <section>
       <div className="py-[100px]">
         <div className="container">
           <div className="flex flex-col gap-12">
-            <div className="text-center">
-              <h2 className="text-5xl leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">
-                Solution for Every Technology
-              </h2>
+            <div className="flex justify-center gap-8 mb-8">
+              {titleData.map((tab, index) => (
+                <button
+                  key={tab.id}
+                  onClick={() => handleMenuClick(index)}
+                  className="text-lg font-medium text-gray-600 hover:text-gray-900 focus:outline-none"
+                >
+                  {tab.title}
+                </button>
+              ))}
             </div>
-            <div className="flex flex-col gap-[60px]">
-              <div className="flex items-center justify-center gap-4">
-                {titleData.map((item, index) => (
-                  <div className="cursor-pointer p-2.5 text-base font-medium text-primary-400 hover:text-primary-200 transition-all duration-300 ease-in">{item.title}</div>
-                ))}
-              </div>
-              <div className="">
-                {languagesIconData.map((iconGroup, tabIndex) => (
-                  <div
-                    className="flex items-center justify-between flex-wrap gap-x-[102px] gap-y-12 px-[84px]"
-                    key={tabIndex}
-                  >
-                    {iconGroup.map((icon) => (
-                      <div key={icon.id}>
-                        <Image
-                          src={icon.logo}
-                          alt={icon.alt}
-                          className="w-full h-full object-cover"
-                          priority
-                        />
-                      </div>
-                    ))}
+
+            {/* Slider */}
+            <div className="">
+              <Slider ref={sliderRef} {...sliderSettings}>
+                {titleData.map((tab, tabIndex) => (
+                  <div key={tab.id} className="px-[84px] min-h-[300px]">
+                    <div className="flex items-center justify-between flex-wrap gap-x-[102px] gap-y-12">
+                      {languagesIconData[tabIndex]?.map((icon) => (
+                        <div
+                          key={icon.id}
+                          className="w-24 h-24 flex items-center justify-center"
+                        >
+                          <Image
+                            src={icon.logo}
+                            alt={icon.alt}
+                            className="w-full h-full object-contain"
+                            priority
+                          />
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 ))}
-              </div>
+              </Slider>
             </div>
-            {/* <div>
-              <Tabs tabs={titleData.map((item) => item.title)}>
-                {languagesIconData.map((iconGroup, tabIndex) => (
-                  <div
-                    className="flex items-center justify-between flex-wrap gap-x-[102px] gap-y-12 px-[84px]"
-                    key={tabIndex}
-                  >
-                    {iconGroup.map((icon) => (
-                      <div key={icon.id}>
-                        <Image
-                          src={icon.logo}
-                          alt={icon.alt}
-                          className="w-full h-full object-cover"
-                          priority
-                        />
-                      </div>
-                    ))}
-                  </div>
-                ))}
-              </Tabs>
-            </div> */}
           </div>
         </div>
       </div>
