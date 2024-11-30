@@ -43,7 +43,7 @@ export const Button: FC<ButtonProps> = ({
   ...props
 }) => {
   const baseStyle =
-    "py-4 px-8 text-base font-medium rounded-lg";
+    "text-base font-medium rounded-lg";
   const disabledStyle =
     disabled || loading ? "opacity-50 cursor-not-allowed" : "";
 

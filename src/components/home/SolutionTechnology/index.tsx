@@ -34,7 +34,33 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
                 Solution for Every Technology
               </h2>
             </div>
-            <div>
+            <div className="flex flex-col gap-[60px]">
+              <div className="flex items-center justify-center gap-4">
+                {titleData.map((item, index) => (
+                  <div className="cursor-pointer p-2.5 text-base font-medium text-primary-400 hover:text-primary-200 transition-all duration-300 ease-in">{item.title}</div>
+                ))}
+              </div>
+              <div className="">
+                {languagesIconData.map((iconGroup, tabIndex) => (
+                  <div
+                    className="flex items-center justify-between flex-wrap gap-x-[102px] gap-y-12 px-[84px]"
+                    key={tabIndex}
+                  >
+                    {iconGroup.map((icon) => (
+                      <div key={icon.id}>
+                        <Image
+                          src={icon.logo}
+                          alt={icon.alt}
+                          className="w-full h-full object-cover"
+                          priority
+                        />
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* <div>
               <Tabs tabs={titleData.map((item) => item.title)}>
                 {languagesIconData.map((iconGroup, tabIndex) => (
                   <div
@@ -54,7 +80,7 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
                   </div>
                 ))}
               </Tabs>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
