@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FC, useRef } from "react";
+import React, { FC, useRef, useState } from "react";
 import Image from "next/image";
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -27,18 +27,22 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
   languagesIconData,
 }) => {
   const sliderRef = useRef<Slider | null>(null);
+  const [selectedTab, setSelectedTab] = useState<number>(0);
 
   const sliderSettings: Settings = {
     dots: false,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
     adaptiveHeight: true,
+    beforeChange: (_, next) => setSelectedTab(next), // Sync slider index with active tab
   };
 
   const handleMenuClick = (index: number) => {
+    setSelectedTab(index);
     if (sliderRef.current) {
       sliderRef.current.slickGoTo(index);
     }
@@ -49,41 +53,51 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
       <div className="py-[100px]">
         <div className="container">
           <div className="flex flex-col gap-12">
-            <div className="flex justify-center gap-8 mb-8">
-              {titleData.map((tab, index) => (
-                <button
-                  key={tab.id}
-                  onClick={() => handleMenuClick(index)}
-                  className="text-lg font-medium text-gray-600 hover:text-gray-900 focus:outline-none"
-                >
-                  {tab.title}
-                </button>
-              ))}
+            {/* Header Menu */}
+            <div className="text-center">
+              <h2 className="text-5xl leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">
+                Solution for Every Technology
+              </h2>
             </div>
-
-            {/* Slider */}
-            <div className="">
-              <Slider ref={sliderRef} {...sliderSettings}>
-                {titleData.map((tab, tabIndex) => (
-                  <div key={tab.id} className="px-[84px] min-h-[300px]">
-                    <div className="flex items-center justify-between flex-wrap gap-x-[102px] gap-y-12">
-                      {languagesIconData[tabIndex]?.map((icon) => (
-                        <div
-                          key={icon.id}
-                          className="w-24 h-24 flex items-center justify-center"
-                        >
-                          <Image
-                            src={icon.logo}
-                            alt={icon.alt}
-                            className="w-full h-full object-contain"
-                            priority
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+            <div className="flex flex-col gap-[60px]">
+              <div className="flex justify-center gap-4">
+                {titleData.map((tab, index) => (
+                  <button
+                    key={tab.id}
+                    onClick={() => handleMenuClick(index)}
+                    className={`text-base font-medium py-2.5 mx-2.5 hover:text-primary-200 transition-all duration-300 ease-in border-b-2  ${selectedTab === index
+                      ? "text-primary-200 border-primary-200"
+                      : "text-primary-400 border-transparent"
+                      }`}
+                  >
+                    {tab.title}
+                  </button>
                 ))}
-              </Slider>
+              </div>
+              {/* Slider */}
+              <div className="">
+                <Slider ref={sliderRef} {...sliderSettings}>
+                  {titleData.map((tab, tabIndex) => (
+                    <div key={tab.id} className="px-[84px]">
+                      <div className="flex items-center justify-between flex-wrap gap-x-[102px] gap-y-12">
+                        {languagesIconData[tabIndex]?.map((icon) => (
+                          <div
+                            key={icon.id}
+                            className="flex items-center justify-center"
+                          >
+                            <Image
+                              src={icon.logo}
+                              alt={icon.alt}
+                              className="w-full h-full object-contain"
+                              priority
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </Slider>
+              </div>
             </div>
           </div>
         </div>
@@ -91,3 +105,4 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
     </section>
   );
 };
+

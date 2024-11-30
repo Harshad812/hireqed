@@ -9,12 +9,13 @@ import { testimonials } from "@/constants/data";
 
 export const TestimonialsSection = () => {
   const settings: Settings = {
-    dots: true,
-    infinite: true,
+    dots: false,
+    arrows: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
   };
 
@@ -29,7 +30,7 @@ export const TestimonialsSection = () => {
               </h2>
             </div>
             <div className="w-full max-w-[1206px] mx-auto">
-              <Slider {...settings}>
+              <Slider {...settings} className="testimonials-slider">
                 {testimonials.map((testimonial, index) => (
                   <div className="w-full max-w-[1206px] mx-auto" key={index}>
                     <div className="shadow-card rounded-lg overflow-hidden flex min-h-[422px]">
