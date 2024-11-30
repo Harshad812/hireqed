@@ -1,11 +1,23 @@
-import { AboutUsSection, MapSection, PromoSection, TestimonialsSection } from "@/components";
-import { HeroSection, ServicesSection, SolutionTechnology, WhyUsSection } from "@/components/home";
+import {
+  AboutUsSection,
+  HeroSection,
+  MapSection,
+  PromoSection,
+  ServicesSection,
+  SolutionTechnology,
+  TestimonialsSection,
+  WhyUsSection,
+} from "@/components";
+import { languagesIconData, titleData } from "@/constants/data";
 
 export const HomeContainer = () => {
   return (
     <div className="flex flex-col">
       <HeroSection />
-      <SolutionTechnology />
+      <SolutionTechnology
+        titleData={titleData}
+        languagesIconData={languagesIconData}
+      />
       <ServicesSection />
       <WhyUsSection />
       <AboutUsSection />

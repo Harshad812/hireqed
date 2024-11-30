@@ -8,3 +8,6 @@ export * from "./Instagram";
 export * from "./Linkdin";
 export * from "./Twitter";
 export * from "./Youtube";
+export * from "./MoneyBagIcon";
+export * from "./EarthWithStandIcon";
+export * from "./PointerArrow";

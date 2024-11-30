@@ -1,0 +1,16 @@
+export { default as PythonLogo } from "./python-logo.svg";
+export { default as RustLogo } from "./rust-logo.svg";
+export { default as JavascriptLogo } from "./javascript-logo.svg";
+export { default as TypescriptLogo } from "./typescript-logo.svg";
+export { default as CsSarpLogo } from "./csharp-logo.svg";
+export { default as CplusplusLogo } from "./cplusplus-logo.svg";
+export { default as RubyLogo } from "./ruby-logo.svg";
+export { default as GoLogo } from "./go-logo.svg";
+export { default as RLogo } from "./r-logo.svg";
+export { default as JavaLogo } from "./java-logo.svg";
+export { default as DartLogo } from "./dart-logo.svg";
+export { default as PhpLogo } from "./php-logo.svg";
+export { default as SwiftLogo } from "./swift-logo.svg";
+export { default as KotlinLogo } from "./kotlin-logo.svg";
+export { default as IconsServicesLogo } from "./Icons-Services-logo.svg";
+export { default as IllustrationImage } from "./Illustration-img.png";

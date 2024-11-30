@@ -13,13 +13,17 @@ export const HeroSection = () => {
               <div className="py-[120px] px-[70px] flex flex-col gap-8">
                 <div className="px-[40px]">
                   <h1 className="text-[64px] leading-[96px] font-semibold  text-white">
-                    We simplify your search for the right talent <span className="text-accent-300">a</span>
+                    We simplify your search for the right talent{" "}
+                    <span className="text-accent-300">a</span>
                   </h1>
                 </div>
                 <div className="">
                   <p className="text-gray-200 text-xl font-normal font-sourceSans text-center">
-                    In today’s fast-paced business world, finding the right resources can be challenging. <br />
-                    At HireQED.ai, we make it easy-connecting you with the perfect match for any project, whether short-term or long-term.
+                    In today’s fast-paced business world, finding the right
+                    resources can be challenging. <br />
+                    At HireQED.ai, we make it easy-connecting you with the
+                    perfect match for any project, whether short-term or
+                    long-term.
                   </p>
                 </div>
                 <div className="flex justify-center gap-6">
