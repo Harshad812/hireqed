@@ -1,34 +1,7 @@
-import { Button } from "@/components/Button";
-import { FacebookIcon, InstagramIcon, LinkdinIcon, Logo, TwitterIcon, YoutubeIcon } from "../Icons";
+import { socialMediaData } from "@/constants/data";
+import { Logo } from "../Icons";
 
 export const Footer = () => {
-  const socialMediaData = [
-    {
-      id: 1,
-      link: "/",
-      logo: FacebookIcon,
-    },
-    {
-      id: 2,
-      link: "/",
-      logo: TwitterIcon,
-    },
-    {
-      id: 3,
-      link: "/",
-      logo: InstagramIcon,
-    },
-    {
-      id: 4,
-      link: "/",
-      logo: LinkdinIcon,
-    },
-    {
-      id: 5,
-      link: "/",
-      logo: YoutubeIcon,
-    }
-  ]
   return (
     <section className="pt-[100px]">
       <div className="bg-primary-900 py-20">
@@ -40,105 +13,162 @@ export const Footer = () => {
                   <Logo />
                 </div>
                 <p className="text-gray-500 text-xs font-normal">
-                  Empowering businesses with tailored tech solutions, innovative AI offerings, and unmatched expertise in digital transformation.
-                  Your partner in navigating the future of work.
+                  Empowering businesses with tailored tech solutions, innovative
+                  AI offerings, and unmatched expertise in digital
+                  transformation. Your partner in navigating the future of work.
                 </p>
               </div>
               <div className="flex flex-col items-start gap-0.5">
-                <h6 className="text-black text-base font-medium m-2.5">Solutions</h6>
+                <h6 className="text-black text-base font-medium m-2.5">
+                  Solutions
+                </h6>
                 <ul className="flex flex-col items-start gap-3">
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 1
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 2
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 3
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 4
                     </a>
                   </li>
                 </ul>
               </div>
               <div className="flex flex-col items-start gap-0.5">
-                <h6 className="text-black text-base font-medium m-2.5">Why HireQED?</h6>
+                <h6 className="text-black text-base font-medium m-2.5">
+                  Why HireQED?
+                </h6>
                 <ul className="flex flex-col items-start gap-3">
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 1
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 2
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 3
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 4
                     </a>
                   </li>
                 </ul>
               </div>
               <div className="flex flex-col items-start gap-0.5">
-                <h6 className="text-black text-base font-medium m-2.5">Hire from Us</h6>
+                <h6 className="text-black text-base font-medium m-2.5">
+                  Hire from Us
+                </h6>
                 <ul className="flex flex-col items-start gap-3">
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 1
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 2
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 3
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 4
                     </a>
                   </li>
                 </ul>
               </div>
               <div className="flex flex-col items-start gap-0.5">
-                <h6 className="text-black text-base font-medium m-2.5">Partner with Us</h6>
+                <h6 className="text-black text-base font-medium m-2.5">
+                  Partner with Us
+                </h6>
                 <ul className="flex flex-col items-start gap-3">
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 1
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 2
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 3
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in">
+                    <a
+                      href="#"
+                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                    >
                       Link 4
                     </a>
                   </li>
@@ -148,7 +178,9 @@ export const Footer = () => {
             <div className="border-t border-gray-300 pt-10">
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="text-gray-400 text-base font-medium">@2024 HireQED All rights Reserved</p>
+                  <p className="text-gray-400 text-base font-medium">
+                    @2024 HireQED All rights Reserved
+                  </p>
                 </div>
                 <div className="">
                   <ul className="flex items-center gap-8">

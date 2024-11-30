@@ -2,6 +2,7 @@ import Image from "next/image";
 import heroBg from "../../../images/bg-home.png";
 import dashboardImage from "../../../images/Dashboard.png";
 import { Button } from "@/components/Button";
+import { TypewriterText } from "@/components/TypewriterText";
 
 export const HeroSection = () => {
   return (
@@ -12,9 +13,18 @@ export const HeroSection = () => {
             <div className="relative z-10 w-full max-w-[1199px] mx-auto">
               <div className="py-[120px] px-[70px] flex flex-col gap-8">
                 <div className="px-[40px]">
-                  <h1 className="text-[64px] leading-[96px] font-semibold  text-white">
+                  <h1 className="text-[64px] leading-[96px] font-semibold text-white">
                     We simplify your search for the right talent{" "}
-                    <span className="text-accent-300">a</span>
+                    <span className="text-accent-300 inline">
+                      <TypewriterText
+                        texts={[
+                          "at faster speed",
+                          "at competitive price",
+                          "from global pool",
+                        ]}
+                        typingSpeed={150}
+                      />
+                    </span>
                   </h1>
                 </div>
                 <div className="">

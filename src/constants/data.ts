@@ -26,6 +26,11 @@ import {
   MoneyBagIcon,
   EarthWithStandIcon,
   PointerArrow,
+  FacebookIcon,
+  TwitterIcon,
+  InstagramIcon,
+  LinkdinIcon,
+  YoutubeIcon,
 } from "@/components/Icons";
 
 export const titleData = [
@@ -231,5 +236,33 @@ export const testimonials = [
       "An excellent platform for recruitment. The team was supportive, and the results were outstanding.",
     name: "Michael B.",
     position: "CEO of StartupX",
+  },
+];
+
+export const socialMediaData = [
+  {
+    id: 1,
+    link: "/",
+    logo: FacebookIcon,
+  },
+  {
+    id: 2,
+    link: "/",
+    logo: TwitterIcon,
+  },
+  {
+    id: 3,
+    link: "/",
+    logo: InstagramIcon,
+  },
+  {
+    id: 4,
+    link: "/",
+    logo: LinkdinIcon,
+  },
+  {
+    id: 5,
+    link: "/",
+    logo: YoutubeIcon,
   },
 ];
