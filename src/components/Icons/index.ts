@@ -11,3 +11,4 @@ export * from "./Youtube";
 export * from "./MoneyBagIcon";
 export * from "./EarthWithStandIcon";
 export * from "./PointerArrow";
+export * from "./RightArrow";
