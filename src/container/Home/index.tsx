@@ -1,10 +1,6 @@
 import {
   AboutUsSection,
-
-  BannerSection,
-
   HeroSection,
-
   MapSection,
   PromoSection,
   ServicesSection,
@@ -12,9 +8,8 @@ import {
   TestimonialsSection,
   WhyUsSection,
 } from "@/components";
-import { ExperienceEfficiency, HiringJourney } from "@/components/HireUs";
+
 import { languagesIconData, titleData } from "@/constants/data";
-import { HireUsHeroImage, IllustrationImage } from "@/images";
 
 export const HomeContainer = () => {
   return (

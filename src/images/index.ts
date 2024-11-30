@@ -16,8 +16,3 @@ export { default as IconsServicesLogo } from "./Icons-Services-logo.svg";
 export { default as IllustrationImage } from "./Illustration-img.png";
 export { default as MapImage } from "./map.png";
 export { default as ClientImg } from "./client-img.png";
-export { default as HireUsHeroImage } from "./hire-us-hero-bg.png";
-export { default as SettingsIcon } from "./SettingsIcon.svg";
-export { default as HeadsetIcon } from "./HeadsetIcon.svg";
-export { default as GoalIcon } from "./GoalIcon.svg";
-export { default as MapIcon } from "./MapIcon.svg";

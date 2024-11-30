@@ -7,4 +7,3 @@ export * from "./MapSection";
 export * from "./TestimonialsSection";
 export * from "./home";
 export * from "./Tabs";
-export * from "./BannerSection";
