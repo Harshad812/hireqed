@@ -63,10 +63,10 @@ const config: Config = {
         md: "16px 8px 100px 0px #00000040",
         lg: "0px 8px 24px -4px #18274B14,0px 6px 12px -6px #18274B1F",
         xl: "0px 18px 88px -4px #18274B24,0px 8px 28px -6px #18274B1F",
+        "2xl": " 0px 2.7px 7.21px -0.9px #37353533,0px 0px 0.9px 0px #5555554D",
 
         Default:
           "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
-        "2xl": "0 25px 50px -12px rgb(0 0 0 / 0.25)",
         inner: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
       },

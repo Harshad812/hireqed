@@ -6,6 +6,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import { testimonials } from "@/constants/data";
+import { RightArrow } from "../Icons";
+
+const NextArrow = ({ onClick }: { onClick?: () => void }) => (
+  <div className="custom-arrow custom-next size-12 rounded border border-gray-300 flex justify-center items-center cursor-pointer text-primary-400 bg-white absolute top-1/2 translate-y-[-50%] right-0 z-10 hover:shadow-2xl transition-all duration-300 ease-in" onClick={onClick}>
+    <RightArrow />
+  </div>
+);
+
+const PrevArrow = ({ onClick }: { onClick?: () => void }) => (
+  <div className="custom-arrow custom-prev size-12 rounded border border-gray-300 flex justify-center items-center cursor-pointer text-primary-400 bg-white absolute top-1/2 translate-y-[-50%] rotate-180 left-0 z-10 hover:shadow-2xl transition-all duration-300 ease-in" onClick={onClick}>
+    <RightArrow />
+  </div>
+);
+
 
 export const TestimonialsSection = () => {
   const settings: Settings = {
@@ -17,6 +31,9 @@ export const TestimonialsSection = () => {
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 5000,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+
   };
 
   return (
@@ -30,7 +47,7 @@ export const TestimonialsSection = () => {
               </h2>
             </div>
             <div className="w-full max-w-[1206px] mx-auto">
-              <Slider {...settings} className="testimonials-slider">
+              <Slider {...settings} className="testimonials-slider px-5">
                 {testimonials.map((testimonial, index) => (
                   <div className="w-full max-w-[1206px] mx-auto" key={index}>
                     <div className="shadow-card rounded-lg overflow-hidden flex min-h-[422px]">
