@@ -17,11 +17,10 @@ export const Tabs: React.FC<TabsProps> = ({ tabs, children }) => {
         {tabs.map((tab, index) => (
           <div
             key={index}
-            className={`cursor-pointer p-2.5 text-base font-medium ${
-              activeTab === index
-                ? "text-primary-200 border-b-2 border-primary-200"
-                : "text-primary-400 hover:text-primary-200"
-            } transition-all duration-300 ease-in`}
+            className={`cursor-pointer p-2.5 text-base font-medium border-b-2 ${activeTab === index
+              ? "text-primary-200 border-b-2 border-primary-200"
+              : "text-primary-400 hover:text-primary-200 border-transparent"
+              } transition-all duration-300 ease-in`}
             onClick={() => setActiveTab(index)}
           >
             {tab}
