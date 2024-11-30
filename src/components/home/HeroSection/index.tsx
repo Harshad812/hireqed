@@ -15,7 +15,7 @@ export const HeroSection = () => {
                 <div className="px-[40px]">
                   <h1 className="text-[64px] leading-[96px] font-semibold text-white">
                     We simplify your search for the right talent{" "}
-                    <span className="text-accent-300 inline">
+                    <span className="text-accent-300 inline-block">
                       <TypewriterText
                         texts={[
                           "at faster speed",
