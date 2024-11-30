@@ -1,4 +1,6 @@
 import { Button } from "@/components/Button";
+import { MapImage } from "@/images";
+import Image from "next/image";
 
 export const MapSection = () => {
   return (
@@ -15,8 +17,45 @@ export const MapSection = () => {
               </div>
             </div>
             <div className="flex flex-col gap-12">
-              <div className="">
-
+              <div className="relative mx-9">
+                <div className="">
+                  <Image
+                    src={MapImage}
+                    alt="service-image"
+                    className="w-full h-full object-contain"
+                    priority={true}
+                  />
+                </div>
+                <div className="absolute top-[108px] left-[88px]">
+                  <div className="flex flex-col gap-0.5 bg-white shadow-lg hover:shadow-xl transition-all duration-300 ease-in rounded px-8 py-4 w-full max-w-[280px]">
+                    <h2 className="text-primary-400 font-medium text-xl capitalize">North America</h2>
+                    <p className="text-gray-600 font-normal font-sourceSans text-base leading-5">United States of America and Canada</p>
+                  </div>
+                </div>
+                <div className="absolute top-[210px] left-[448px]">
+                  <div className="flex flex-col gap-0.5 bg-white shadow-lg hover:shadow-xl transition-all duration-300 ease-in rounded px-8 py-4 w-full max-w-[280px]">
+                    <h2 className="text-primary-400 font-medium text-xl capitalize">Europe</h2>
+                    <p className="text-gray-600 font-normal font-sourceSans text-base leading-5">UK, Germany, Ireland and France</p>
+                  </div>
+                </div>
+                <div className="absolute top-[326px] right-[302px]">
+                  <div className="flex flex-col gap-0.5 bg-white shadow-lg hover:shadow-xl transition-all duration-300 ease-in rounded px-8 py-4 w-full max-w-[280px]">
+                    <h2 className="text-primary-400 font-medium text-xl capitalize">Middle East</h2>
+                    <p className="text-gray-600 font-normal font-sourceSans text-base leading-5">UAE, Saudi Arabia, Oman, Qatar and Kuwait</p>
+                  </div>
+                </div>
+                <div className="absolute bottom-[135px] left-[367px]">
+                  <div className="flex flex-col gap-0.5 bg-white shadow-lg hover:shadow-xl transition-all duration-300 ease-in rounded px-8 py-4 w-full max-w-[280px]">
+                    <h2 className="text-primary-400 font-medium text-xl capitalize">Africa</h2>
+                    <p className="text-gray-600 font-normal font-sourceSans text-base leading-5">South Africa, Nigeria and Botswana</p>
+                  </div>
+                </div>
+                <div className="absolute bottom-[111px] right-[96px]">
+                  <div className="flex flex-col gap-0.5 bg-white shadow-lg hover:shadow-xl transition-all duration-300 ease-in rounded px-8 py-4 w-full max-w-[280px]">
+                    <h2 className="text-primary-400 font-medium text-xl capitalize">Asia</h2>
+                    <p className="text-gray-600 font-normal font-sourceSans text-base leading-5">India, Singapore, Malaysia and Thailand</p>
+                  </div>
+                </div>
               </div>
               <div className="flex justify-center">
                 <Button

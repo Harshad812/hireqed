@@ -58,14 +58,14 @@ const config: Config = {
         'about-bg': "url('./../images/Background-Graphics.png')",
       },
       boxShadow: {
-        sm: "4px 2px 50px 0px #00000040",
         card: "0px 2.7px 7.21px -0.9px #45A3DB33,0px 0px 0.9px 0px #253B7C80",
+        sm: "4px 2px 50px 0px #00000040",
+        md: "16px 8px 100px 0px #00000040",
+        lg: "0px 8px 24px -4px #18274B14,0px 6px 12px -6px #18274B1F",
+        xl: "0px 18px 88px -4px #18274B24,0px 8px 28px -6px #18274B1F",
 
         Default:
           "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
-        md: "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
-        lg: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
-        xl: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
         "2xl": "0 25px 50px -12px rgb(0 0 0 / 0.25)",
         inner: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",

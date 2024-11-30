@@ -51,7 +51,7 @@ export const HeroSection = () => {
               />
             </div>
           </div>
-          <div className="max-w-[1152px] mt-[-438px] relative z-10 mx-auto shadow-sm rounded-lg overflow-hidden transition-all duration-300 ease-in hover:scale-[1.02]">
+          <div className="max-w-[1152px] mt-[-438px] relative z-10 mx-auto shadow-sm hover:shadow-md rounded-lg overflow-hidden transition-all duration-300 ease-in hover:scale-[1.02]">
             <Image
               src={dashboardImage}
               alt="Dashboard Image"
