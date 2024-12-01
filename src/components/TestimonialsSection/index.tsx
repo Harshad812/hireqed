@@ -33,9 +33,7 @@ export const TestimonialsSection = () => {
     autoplaySpeed: 5000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-
   };
-
   return (
     <section className="">
       <div className="py-[100px]">

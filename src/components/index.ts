@@ -8,3 +8,8 @@ export * from "./TestimonialsSection";
 export * from "./home";
 export * from "./Tabs";
 export * from "./TypewriterText";
+export * from "./BannerSection";
+export * from "./HireUs";
+export * from "./ContactUs";
+export * from "./PartnerWithUs";
+

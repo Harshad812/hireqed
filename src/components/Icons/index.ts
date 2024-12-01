@@ -12,3 +12,6 @@ export * from "./MoneyBagIcon";
 export * from "./EarthWithStandIcon";
 export * from "./PointerArrow";
 export * from "./RightArrow";
+export * from "./SeamlessIntegrationIcon";
+export * from "./GraphIcon";
+export * from "./EyeIcon";

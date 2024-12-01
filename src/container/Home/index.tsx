@@ -8,23 +8,10 @@ import {
   TestimonialsSection,
   WhyUsSection,
 } from "@/components";
-
 import { languagesIconData, titleData } from "@/constants/data";
-
 export const HomeContainer = () => {
   return (
-    <div className="flex flex-col">
-      {/* <BannerSection title="Effortlessly find the Right Talent with HireQED.ai"
-        description="Revolutionizing resource augmentation with innovative tools and top-tier talent."
-        image={HireUsHeroImage}
-        button={{
-          primaryLabel: "Sign Up",
-          secondaryLabel: "Learn More",
-        }}
-      />
-      <HiringJourney />
-      <ExperienceEfficiency /> */}
-
+    <div className="">
       <HeroSection />
       <SolutionTechnology
         titleData={titleData}
@@ -34,7 +21,9 @@ export const HomeContainer = () => {
       <WhyUsSection />
       <AboutUsSection />
       <TestimonialsSection />
-      <MapSection />
+      <MapSection
+        title="Connecting Across Continents"
+        description="With strategic hubs in the USA and India, we empower businesses across six continents, offering tailored solutions that drive growth and innovation." />
       <PromoSection />
     </div>
   );

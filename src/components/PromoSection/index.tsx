@@ -8,7 +8,7 @@ export const PromoSection = () => {
       <div className="py-[100px]">
         <div className="container">
           <div className="">
-            <div className="mx-[50px] shadow-card rounded-lg">
+            <div className="mx-[50px] mb-[-135px] shadow-card rounded-lg">
               <Image
                 src={PromoImage}
                 alt="Promo image"
@@ -16,7 +16,7 @@ export const PromoSection = () => {
                 priority={true}
               />
             </div>
-            <div className="bg-primary-gradient relative z-10 rounded-lg overflow-hidden px-14 py-8 mt-[-135px]">
+            <div className="bg-primary-gradient relative z-10 rounded-lg overflow-hidden px-14 py-8">
               <div className="flex justify-between items-center">
                 <div className="w-full max-w-[622px] flex flex-col gap-2">
                   <h2 className="text-[32px] leading-[42px] font-semibold text-white">Ready to get started?</h2>

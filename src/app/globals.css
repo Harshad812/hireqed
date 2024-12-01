@@ -31,3 +31,6 @@ body {
   }
 }
 
+.testimonials-slider .slick-list{
+  padding: 4px 0px;
+}
