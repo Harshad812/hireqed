@@ -1,17 +1,17 @@
-import { EyeIcon, GraphIcon, SeamlessIntegrationIcon } from "@/components/Icons";
+import { EyeIcon, GraphIcon, HeadsetIcon, SeamlessIntegrationIcon, settingIcon } from "@/components/Icons";
 
 export const WhyPartnerWithUs = () => {
     const whyPartnerData = [
         {
             id: 1,
-            logo: <GraphIcon />,
+            logo: <settingIcon />,
 
             title: "Expanded Opportunities",
             description: "Gain access to a vast pool of clients looking for diverse expertise and services."
         },
         {
             id: 2,
-            logo: <GraphIcon />,
+            logo: <HeadsetIcon />,
 
             title: "Comprehensive Support",
             description: "Our team is dedicated to supporting you at every step, ensuring a successful and rewarding partnership."

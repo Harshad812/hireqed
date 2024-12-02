@@ -15,3 +15,6 @@ export * from "./RightArrow";
 export * from "./SeamlessIntegrationIcon";
 export * from "./GraphIcon";
 export * from "./EyeIcon";
+export * from "./GoalIcon";
+export * from "./HeadsetIcon";
+export * from "./MapIcon";

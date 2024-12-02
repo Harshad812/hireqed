@@ -1,8 +1,5 @@
 import Image from "next/image";
-import heroBg from "../../../images/bg-home.png";
-import dashboardImage from "../../../images/Dashboard.png";
 import { Button } from "@/components/Button";
-import { HireUsHeroImage } from "@/images";
 interface BannerSectionProps {
   title: string;
   description: string;

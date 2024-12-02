@@ -1,8 +1,4 @@
-import Image from "next/image";
-import heroBg from "../../../images/bg-home.png";
-import dashboardImage from "../../../images/Dashboard.png";
-import { Button } from "@/components/Button";
-import { GoalIcon, HeadsetIcon, MapIcon, SettingsIcon } from "@/images";
+import { GoalIcon, HeadsetIcon, MapIcon, settingIcon, } from "@/components/Icons";
 
 export const ExperienceEfficiency = () => {
     const ExperienceEfficiencyData = [
@@ -11,32 +7,28 @@ export const ExperienceEfficiency = () => {
             title: "Commitment to Efficiency",
             description:
                 "At HireQED.ai, we streamline the hiring process to make it as efficient and effective as possible.",
-            logo: SettingsIcon,
-            imageAlt: "settings icon",
+            logo: <settingIcon />,
         },
         {
             id: 2,
             title: "Comprehensive Support",
             description:
                 "Our platform is designed to handle every aspect of your project, from inception to completion",
-            logo: HeadsetIcon,
-            imageAlt: "headset icon",
+            logo: <HeadsetIcon />,
         },
         {
             id: 3,
             title: "Focus on What Matters",
             description:
                 "Leverage our robust tools and resources, allowing you to concentrate on driving your projects forward while we manage the talent.",
-            logo: GoalIcon,
-            imageAlt: "Goal icon",
+            logo: <GoalIcon />,
         },
         {
             id: 4,
             title: "Get Started Today",
             description:
                 "Register with us to embark on a seamless hiring journey. Achieving your project goals has never been easier with HireQED.ai.",
-            logo: MapIcon,
-            imageAlt: "map icon",
+            logo: <MapIcon />,
         },
     ];
     return (
@@ -52,12 +44,7 @@ export const ExperienceEfficiency = () => {
                                 <div className="bg-white rounded-lg py-7 px-4 shadow-card min-h-[324px] hover:bg-primary-gradient group">
                                     <div className="flex flex-col gap-4">
                                         <div className="size-12">
-                                            <Image
-                                                src={items.logo}
-                                                alt={items.imageAlt}
-                                                className="w-full h-full"
-                                                priority={true}
-                                            />
+                                            {items.logo}
                                         </div>
                                         <div className="flex flex-col gap-6">
                                             <h2 className="text-[28px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent group-hover:text-fill-unset min-h-[84px] group-hover:text-white">

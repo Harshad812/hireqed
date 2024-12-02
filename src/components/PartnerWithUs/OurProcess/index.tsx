@@ -1,8 +1,4 @@
-import Image from "next/image";
-import heroBg from "../../../images/bg-home.png";
-import dashboardImage from "../../../images/Dashboard.png";
 import { Button } from "@/components/Button";
-import { GoalIcon, HeadsetIcon, MapIcon, SettingsIcon } from "@/images";
 
 export const OurProcess = () => {
 

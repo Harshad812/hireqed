@@ -65,7 +65,7 @@ export const ServicesSection = () => {
               </h2>
             </div>
             <div className="shadow-card rounded-lg flex flex-row">
-              <div className="py-[61px] px-[60px] w-full max-w-[calc(100%-444px)]">
+              <div className="py-[61px] px-[60px] w-full max-w-[calc(100%-440px)]">
                 <div className="flex flex-col gap-20">
                   {/* Loop through servicesData */}
                   <Tabs tabs={servicesData.map((item) => item.title)}>
@@ -83,7 +83,7 @@ export const ServicesSection = () => {
                   </Tabs>
                 </div>
               </div>
-              <div className="">
+              <div className="w-full max-w-[440px]">
                 <Image
                   src={IllustrationImage}
                   alt="service-image"
