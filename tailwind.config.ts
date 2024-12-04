@@ -9,7 +9,7 @@ const config: Config = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   corePlugins: {
-    container: false
+    container: false,
   },
   theme: {
     extend: {
@@ -54,8 +54,9 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        'primary-gradient': "linear-gradient(127.37deg, #189DF8 1.37%, #253E7F 100%)",
-        'about-bg': "url('./../images/Background-Graphics.png')",
+        "primary-gradient":
+          "linear-gradient(127.37deg, #189DF8 1.37%, #253E7F 100%)",
+        "about-bg": "url('./../images/Background-Graphics.png')",
       },
       boxShadow: {
         card: "0px 2.7px 7.21px -0.9px #45A3DB33,0px 0px 0.9px 0px #253B7C80",
@@ -97,18 +98,22 @@ const config: Config = {
       },
     },
     screens: {
-      mobile: '375px',
-      sm: '576px',
-      md: '768px',
-      lg: '992px',
-      xl: '1200px',
-      '2xl': '1400px',
-      laptop: '1440px',
-      '3xl': '1500px',
+      mobile: "375px",
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1200px",
+      "2xl": "1400px",
+      laptop: "1440px",
+      "3xl": "1500px",
     },
+    // fontFamily: {
+    //   poppins: ['"Poppins", sans-serif'],
+    //   sourceSans: ['"Source Sans 3",sans-serif'],
+    // },
     fontFamily: {
-      poppins: ['"Poppins", sans-serif'],
-      sourceSans: ['"Source Sans 3",sans-serif'],
+      poppins: ["var(--font-poppins)", "sans-serif"], // Use the CSS variable defined above
+      source: ["var(--font-sourceSans)", "sans-serif"], // Use the CSS variable defined above
     },
   },
 
