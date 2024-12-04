@@ -1,8 +1,10 @@
 import {
+  AnalyticsLogo,
   ClientImg,
   CplusplusLogo,
   CsSarpLogo,
   DartLogo,
+  DigitalLogo,
   GoLogo,
   IconsServicesLogo,
   IllustrationImage,
@@ -15,6 +17,7 @@ import {
   RubyLogo,
   RustLogo,
   SwiftLogo,
+  TechLogo,
   TypescriptLogo,
 } from "@/images";
 
@@ -139,7 +142,7 @@ export const servicesData = [
     title: "Analytics & AI Offerings",
     description:
       "Explore data-driven solutions with cutting-edge analytics and AI technologies to boost your business decision-making process.",
-    imageSrc: IllustrationImage,
+    imageSrc: AnalyticsLogo,
     imageAlt: "AI Illustration",
     buttonLabel: "Learn More",
   },
@@ -148,7 +151,7 @@ export const servicesData = [
     title: "Digital Transformation",
     description:
       "Accelerate your business with end-to-end digital transformation services, helping you enhance your operational efficiency.",
-    imageSrc: IllustrationImage,
+    imageSrc: DigitalLogo,
     imageAlt: "Digital Transformation Image",
     buttonLabel: "Learn More",
   },
@@ -157,7 +160,7 @@ export const servicesData = [
     title: "Tech Consultation",
     description:
       "Get expert insights from seasoned consultants on navigating the latest tech trends and optimizing your IT infrastructure.",
-    imageSrc: IllustrationImage,
+    imageSrc: TechLogo,
     imageAlt: "Tech Consultation Image",
     buttonLabel: "Learn More",
   },

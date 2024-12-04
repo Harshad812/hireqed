@@ -2,17 +2,22 @@ import { Button } from "@/components/Button";
 import { MapImage } from "@/images";
 import Image from "next/image";
 
-export const MapSection = () => {
+interface MapSectionProps {
+  title: string;
+  description: string;
+}
+
+export const MapSection = ({ title, description }: MapSectionProps) => {
   return (
     <section className="">
       <div className="py-[100px]">
         <div className="container">
           <div className="flex flex-col gap-16">
             <div className="flex flex-col gap-12">
-              <h2 className="text-5xl leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">Connecting Across Continents</h2>
+              <h2 className="text-5xl leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">{title}</h2>
               <div className="w-full max-w-[775px] mx-auto text-center">
                 <p className="text-gray-600 text-xl font-normal font-sourceSans">
-                  With strategic hubs in the USA and India, we empower businesses across six continents, offering tailored solutions that drive growth and innovation.
+                  {description}
                 </p>
               </div>
             </div>

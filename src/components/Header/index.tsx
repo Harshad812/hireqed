@@ -7,11 +7,11 @@ export const Header = () => {
   const menus = [
     {
       name: "About Us",
-      href: "#",
+      href: "/about-us",
     },
     {
       name: "How it Works",
-      href: "#",
+      href: "/hire-from-us",
     },
     {
       name: "Hire Talent",
@@ -19,11 +19,11 @@ export const Header = () => {
     },
     {
       name: "Partner with Us",
-      href: "#",
+      href: "/partner-with-us",
     },
     {
       name: "Contact Us",
-      href: "#",
+      href: "/contact-us",
     },
   ];
 
@@ -32,7 +32,9 @@ export const Header = () => {
       <div className="container">
         <div className="flex items-center justify-between">
           <div className="logo">
-            <Logo />
+            <a href="/">
+              <Logo />
+            </a>
           </div>
           <div className="menus gap-4 flex items-center">
             {menus?.map((menu, index) => (
