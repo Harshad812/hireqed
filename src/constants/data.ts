@@ -7,7 +7,6 @@ import {
   DigitalLogo,
   GoLogo,
   IconsServicesLogo,
-  IllustrationImage,
   JavaLogo,
   JavascriptLogo,
   KotlinLogo,

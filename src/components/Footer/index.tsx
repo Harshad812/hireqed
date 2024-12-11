@@ -1,5 +1,6 @@
 import { socialMediaData } from "@/constants/data";
-import { Logo } from "../Icons";
+import { Logo } from "@/images";
+import Image from "next/image";
 
 export const Footer = () => {
   return (
@@ -10,7 +11,7 @@ export const Footer = () => {
             <div className="flex gap-20">
               <div className="flex flex-col gap-6 w-full max-w-[378px] mr-auto">
                 <div>
-                  <Logo />
+                  <Image src={Logo} alt="Logo" />
                 </div>
                 <p className="text-gray-500 text-xs font-normal">
                   Empowering businesses with tailored tech solutions, innovative

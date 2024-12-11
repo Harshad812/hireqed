@@ -1,4 +1,3 @@
-export * from "./logo";
 export * from "./globeIcon";
 export * from "./rocketIcon";
 export * from "./settingIcon";

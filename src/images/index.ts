@@ -26,3 +26,4 @@ export { default as TechLogo } from "./Tech-logo.svg";
 export { default as DigitalLogo } from "./Digital-logo.svg";
 export { default as ContactUsHeroImage } from "./contact-us-hero-bg.png";
 export { default as PartnerWithUsHeroImage } from "./partner-with-us-hero-bg.png";
+export { default as Logo } from "./Logo.svg";

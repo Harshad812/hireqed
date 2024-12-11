@@ -23,8 +23,9 @@ export const HomeContainer = () => {
       <TestimonialsSection />
       <MapSection
         title="Connecting Across Continents"
-        description="With strategic hubs in the USA and India, we empower businesses across six continents, offering tailored solutions that drive growth and innovation." />
-      <PromoSection />
+        description="With strategic hubs in the USA and India, we empower businesses across six continents, offering tailored solutions that drive growth and innovation."
+      />
+      <PromoSection withImage />
     </div>
   );
 };

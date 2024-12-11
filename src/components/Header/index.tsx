@@ -1,7 +1,8 @@
 "use client";
 
+import { Logo } from "@/images";
 import { Button } from "../Button";
-import { Logo } from "../Icons";
+import Image from "next/image";
 
 export const Header = () => {
   const menus = [
@@ -11,11 +12,11 @@ export const Header = () => {
     },
     {
       name: "How it Works",
-      href: "/hire-from-us",
+      href: "",
     },
     {
       name: "Hire Talent",
-      href: "#",
+      href: "/hire-from-us",
     },
     {
       name: "Partner with Us",
@@ -33,7 +34,7 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           <div className="logo">
             <a href="/">
-              <Logo />
+              <Image src={Logo} alt="Logo" />
             </a>
           </div>
           <div className="menus gap-4 flex items-center">
