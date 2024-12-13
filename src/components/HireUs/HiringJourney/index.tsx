@@ -3,16 +3,17 @@ import { Button } from "@/components/Button";
 import { HiringImage1, HiringImage2 } from "@/images";
 import { FC } from "react";
 import clsx from "clsx";
+import { Timeline } from "../Timeline";
 
 interface HiringJourneyDetailsData {
   step: number;
   title: string;
   description:
-    | {
-        key: string;
-        value: string;
-      }[]
-    | string;
+  | {
+    key: string;
+    value: string;
+  }[]
+  | string;
 }
 
 const HiringJourneyDetailsData: HiringJourneyDetailsData[] = [
@@ -183,10 +184,9 @@ export const HiringJourney = () => {
                 Your Hiring Journey Starts Here
               </h2>
             </div>
-            <div className="relative">
-              {/* <Timeline /> */}
-
-              <div className="flex flex-col gap-16">
+            <div className="flex flex-col gap-16">
+              <div className="relative">
+                <Timeline />
                 <div className="flex flex-col gap-[100px]">
                   {HiringJourneyDetailsData.map((items, index) => (
                     <div
@@ -211,14 +211,14 @@ export const HiringJourney = () => {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-center">
-                  <Button
-                    variant="fill"
-                    label="Register Now"
-                    type="submit"
-                    className="py-4 px-12 text-base leading-5 font-medium rounded-lg text-white border-0 bg-accent-300 hover:bg-accent-200 transition-all duration-500 ease-in"
-                  />
-                </div>
+              </div>
+              <div className="flex justify-center">
+                <Button
+                  variant="fill"
+                  label="Register Now"
+                  type="submit"
+                  className="py-4 px-12 text-base leading-5 font-medium rounded-lg text-white border-0 bg-accent-300 hover:bg-accent-200 transition-all duration-500 ease-in"
+                />
               </div>
             </div>
           </div>

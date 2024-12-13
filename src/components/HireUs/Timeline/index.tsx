@@ -10,7 +10,7 @@ const TimelineItem: FC<TimelineItemProps> = ({ gradient, icon }) => {
     <div className="flex flex-col items-center">
       {/* Icon Circle */}
       <div
-        className={`flex items-center justify-center w-12 h-12 ${gradient} rounded-full`}
+        className={`flex items-center justify-center w-14 h-14 ${gradient} rounded-full`}
       >
         {icon}
       </div>
@@ -20,18 +20,25 @@ const TimelineItem: FC<TimelineItemProps> = ({ gradient, icon }) => {
 
 export const Timeline = () => {
   return (
-    <div className="flex flex-col items-center justify-between h-full absolute left-1/2 transform -translate-x-1/2">
-      {Array(7)
+    <div className="flex flex-col h-full absolute left-1/2 -translate-x-1/2 py-[112px]">
+      {Array(8)
         .fill(0)
         .map((_, index) => (
-          <div className="flex flex-col items-center space-y-8" key={index}>
+          <div className="flex flex-col flex-1 items-center" key={index}>
+            {/* index === 0 h-[387px]
+             index === 1 h-[420px]
+             index === 2 h-[440px]
+             index === 3 h-[394px]
+             index === 4 h-[418px]
+             index === 5 h-[457px]
+             index === 6 h-[545px] */}
             {/* Timeline Item */}
             <TimelineItem
-              gradient="bg-gradient-to-r from-blue-400 to-blue-600"
+              gradient={` ${index === 0 ? "bg-primary-gradient" : "bg-primary-1100"}`}
               icon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6 text-white"
+                  className="w-8 h-8 text-white"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -47,8 +54,8 @@ export const Timeline = () => {
             />
 
             {/* Horizontal Line Between Items */}
-            {index < 6 && (
-              <div className="w-px flex-grow border-gray-300 opacity-50 bg-gray-300"></div>
+            {index < 7 && (
+              <div className="w-px flex-grow border-primary-1000 bg-primary-1000"></div>
             )}
           </div>
         ))}

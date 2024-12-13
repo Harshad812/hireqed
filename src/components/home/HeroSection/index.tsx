@@ -9,13 +9,13 @@ export const HeroSection = () => {
     <section className="hero-section">
       <div className="pb-[100px]">
         <div className="container">
-          <div className="relative min-h-[1023px]">
+          <div className="relative">
             <div className="relative z-10 w-full max-w-[1199px] mx-auto">
-              <div className="py-[120px] px-[70px] flex flex-col gap-8">
+              <div className="pt-[120px] pb-[100px] px-[70px] flex flex-col gap-8">
                 <div className="px-[40px]">
                   <h1 className="text-[64px] leading-[96px] font-semibold text-white">
                     We simplify your search for the right talent{" "}
-                    <span className="text-accent-300 inline-block">
+                    <span className="text-accent-300 inline">
                       <TypewriterText
                         texts={[
                           "at faster speed",
@@ -52,7 +52,7 @@ export const HeroSection = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute top-0 left-0 w-full h-full rounded-lg overflow-hidden before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:opacity-75">
+            <div className="absolute top-0 left-0 w-full min-h-[1023px] rounded-lg overflow-hidden before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:opacity-75">
               <Image
                 src={heroBg}
                 alt="Hero Background"
@@ -60,14 +60,14 @@ export const HeroSection = () => {
                 priority={true}
               />
             </div>
-          </div>
-          <div className="max-w-[1152px] mt-[-438px] relative z-10 mx-auto shadow-sm hover:shadow-md rounded-lg overflow-hidden transition-all duration-300 ease-in hover:scale-[1.02]">
-            <Image
-              src={dashboardImage}
-              alt="Dashboard Image"
-              className="w-full h-full"
-              priority={true}
-            />
+            <div className="max-w-[1152px]  relative z-10 mx-auto shadow-sm hover:shadow-md rounded-lg overflow-hidden transition-all duration-300 ease-in hover:scale-[1.02]">
+              <Image
+                src={dashboardImage}
+                alt="Dashboard Image"
+                className="w-full h-full"
+                priority={true}
+              />
+            </div>
           </div>
         </div>
       </div>

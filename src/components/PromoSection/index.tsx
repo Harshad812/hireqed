@@ -27,7 +27,7 @@ export const PromoSection: FC<PromoSectionProps> = ({ withImage }) => {
             <div
               className={clsx(
                 "bg-primary-gradient relative z-10 rounded-lg overflow-hidden px-14 py-8",
-                { "px-14 py-8": withImage, "px-14 py-16": !withImage }
+                { "px-14 py-8": withImage, "py-[94px]": !withImage }
               )}
             >
               <div className="flex justify-between items-center">
