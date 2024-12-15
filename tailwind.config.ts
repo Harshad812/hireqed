@@ -47,6 +47,10 @@ const config: Config = {
           DEFAULT: "#FFFFFF",
           100: "#FFFFFF26",
         },
+        black: {
+          DEFAULT: "#000000",
+          100: "#000000BF",
+        },
         gradient: {
           small:
             "background: linear-gradient(127.37deg, #189DF8 1.37%, #253E7F 100%)",

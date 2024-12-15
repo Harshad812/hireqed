@@ -24,7 +24,7 @@ export const PartnerWithUsContainer = () => {
       <PartnerWithHireQED />
       <OurProcess />
       <WhyPartnerWithUs />
-      <AboutUsSection />
+      <AboutUsSection title="We aim to empower organizations by connecting them with the right talent swiftly and efficiently, simplifying the hiring process to ensure quality, reliability, and a seamless experience for any project." button={true} />
       <TestimonialsSection />
       <PromoSection />
     </div>

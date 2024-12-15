@@ -8,8 +8,8 @@ export const Footer = () => {
       <div className="bg-primary-900 py-20">
         <div className="container">
           <div className="flex flex-col gap-20">
-            <div className="flex gap-20">
-              <div className="flex flex-col gap-6 w-full max-w-[378px] mr-auto">
+            <div className="flex 2xl:gap-20 xl:gap-16 gap-10">
+              <div className="flex flex-col gap-6 w-full 2xl:max-w-[378px] max-w-[290px] mr-auto">
                 <div>
                   <Image src={Logo} alt="Logo" />
                 </div>
@@ -27,7 +27,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 1
                     </a>
@@ -35,7 +35,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 2
                     </a>
@@ -43,7 +43,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 3
                     </a>
@@ -51,7 +51,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 4
                     </a>
@@ -66,7 +66,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 1
                     </a>
@@ -74,7 +74,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 2
                     </a>
@@ -82,7 +82,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 3
                     </a>
@@ -90,7 +90,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 4
                     </a>
@@ -105,7 +105,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 1
                     </a>
@@ -113,7 +113,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 2
                     </a>
@@ -121,7 +121,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 3
                     </a>
@@ -129,7 +129,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 4
                     </a>
@@ -144,7 +144,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 1
                     </a>
@@ -152,7 +152,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 2
                     </a>
@@ -160,7 +160,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 3
                     </a>
@@ -168,7 +168,7 @@ export const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-primary-400 p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      className="text-primary-400 inline-block p-2.5 text-base font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Link 4
                     </a>

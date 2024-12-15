@@ -27,3 +27,7 @@ export { default as DigitalLogo } from "./Digital-logo.svg";
 export { default as ContactUsHeroImage } from "./contact-us-hero-bg.png";
 export { default as PartnerWithUsHeroImage } from "./partner-with-us-hero-bg.png";
 export { default as Logo } from "./Logo.svg";
+export { default as AboutUsHeroImage } from "./about-us-hero-bg.png";
+export { default as ExcellenceImage } from "./Excellence-img.png";
+export { default as FlawlessCommunicationImage } from "./Flawless-Communication-img.png";
+export { default as CollaborationImage } from "./Collaboration-img.png";

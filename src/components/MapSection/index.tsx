@@ -13,10 +13,10 @@ export const MapSection = ({ title, description }: MapSectionProps) => {
       <div className="py-[100px]">
         <div className="container">
           <div className="flex flex-col gap-16">
-            <div className="flex flex-col gap-12">
-              <h2 className="text-5xl leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">{title}</h2>
+            <div className="flex flex-col xl:gap-12 md:gap-11 gap-10">
+              <h2 className="xl:text-5xl xl:leading-[62px] md:text-4xl sm:text-3xl text-2xl inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">{title}</h2>
               <div className="w-full max-w-[775px] mx-auto text-center">
-                <p className="text-gray-600 text-xl font-normal font-sourceSans">
+                <p className="text-gray-600 xl:text-xl md:text-lg text-base font-normal font-sourceSans">
                   {description}
                 </p>
               </div>
