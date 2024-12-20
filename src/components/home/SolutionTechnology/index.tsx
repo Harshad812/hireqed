@@ -50,7 +50,7 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
 
   return (
     <section>
-      <div className="py-[100px]">
+      <div className="2xl:py-[100px] xl:py-[90px] lg:py-[80px] md:py-[70px] py-[60px]">
         <div className="container">
           <div className="flex flex-col gap-12">
             {/* Header Menu */}
