@@ -1,26 +1,44 @@
 import { Button } from "@/components/Button";
 import Image from "next/image";
 import PromoImage from "./../../images/Dashboard.png";
+import { FC } from "react";
+import clsx from "clsx";
 
-export const PromoSection = () => {
+interface PromoSectionProps {
+  withImage?: boolean;
+}
+
+export const PromoSection: FC<PromoSectionProps> = ({ withImage }) => {
   return (
     <section className="">
       <div className="py-[100px]">
         <div className="container">
           <div className="">
-            <div className="mx-[50px] mb-[-135px] shadow-card rounded-lg">
-              <Image
-                src={PromoImage}
-                alt="Promo image"
-                className="w-full h-full object-cover"
-                priority={true}
-              />
-            </div>
-            <div className="bg-primary-gradient relative z-10 rounded-lg overflow-hidden px-14 py-8">
+            {withImage && (
+              <div className="mx-[50px] mb-[-135px] shadow-card rounded-lg">
+                <Image
+                  src={PromoImage}
+                  alt="Promo image"
+                  className="w-full h-full object-cover"
+                  priority={true}
+                />
+              </div>
+            )}
+            <div
+              className={clsx(
+                "bg-primary-gradient relative z-10 rounded-lg overflow-hidden px-14 py-8",
+                { "px-14 py-8": withImage, "py-[94px]": !withImage }
+              )}
+            >
               <div className="flex justify-between items-center">
                 <div className="w-full max-w-[622px] flex flex-col gap-2">
-                  <h2 className="text-[32px] leading-[42px] font-semibold text-white">Ready to get started?</h2>
-                  <p className="text-primary-800 text-base font-normal font-sourceSans">Discover how we can help you achieve your project goals with unparalleled ease and efficiency</p>
+                  <h2 className="text-[32px] leading-[42px] font-semibold text-white">
+                    Ready to get started?
+                  </h2>
+                  <p className="text-primary-800 text-base font-normal font-sourceSans">
+                    Discover how we can help you achieve your project goals with
+                    unparalleled ease and efficiency
+                  </p>
                 </div>
                 <div className="flex gap-6">
                   <Button
