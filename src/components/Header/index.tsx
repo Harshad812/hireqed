@@ -4,6 +4,7 @@ import { Logo } from "@/images";
 import { Button } from "../Button";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,6 @@ export const Header = () => {
       document.body.classList.remove("overflow-hidden");
     };
   }, [isOpen]);
-
 
   const menus = [
     {
@@ -57,7 +57,10 @@ export const Header = () => {
             </a>
           </div>
           <div className="lg:hidden block">
-            <div className={`hamburger ${isOpen ? 'is-active' : ''}`} onClick={toggleMenu}>
+            <div
+              className={`hamburger ${isOpen ? "is-active" : ""}`}
+              onClick={toggleMenu}
+            >
               <span className="line"></span>
               <span className="line opacity-0"></span>
               <span className="line"></span>
@@ -68,13 +71,13 @@ export const Header = () => {
                   <div className="flex flex-col gap-3 py-4 bg-white h-[calc(100vh-102px)] overflow-y-auto">
                     <div className="menus gap-[22px] lg:hidden flex flex-col">
                       {menus?.map((menu, index) => (
-                        <a
+                        <Link
                           key={index}
                           href={menu.href}
                           className="py-2.5 font-medium text-base capitalize text-primary-400 hover:text-primary-200 transition-all duration-500 ease-in"
                         >
                           {menu.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                     <div className="flex flex-col gap-3">
