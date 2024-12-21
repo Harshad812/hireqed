@@ -19,7 +19,10 @@ export const HomeContainer = () => {
       />
       <ServicesSection />
       <WhyUsSection />
-      <AboutUsSection title="We aim to empower organizations by connecting them with the right talent swiftly and efficiently, simplifying the hiring process to ensure quality, reliability, and a seamless experience for any project." button={true} />
+      <AboutUsSection
+        title="We aim to empower organizations by connecting them with the right talent swiftly and efficiently, simplifying the hiring process to ensure quality, reliability, and a seamless experience for any project."
+        withButton={true}
+      />
       <TestimonialsSection />
       <MapSection
         title="Connecting Across Continents"

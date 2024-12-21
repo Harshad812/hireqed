@@ -1,17 +1,23 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Button } from "@/components/Button";
+
 interface BannerSectionProps {
   title: string;
   description: string;
-  image: string;
-  button: {
+  image: StaticImageData;
+  button?: {
     primaryLabel: string;
-    primaryOnClick: () => void;
+    primaryOnClick?: () => void;
     secondaryLabel?: string;
     secondaryOnClick?: () => void;
   };
 }
-export const BannerSection = ({ title, description, image, button }: BannerSectionProps) => {
+export const BannerSection = ({
+  title,
+  description,
+  image,
+  button,
+}: BannerSectionProps) => {
   return (
     <section className="banner-section">
       <div className="pb-[100px]">
@@ -19,8 +25,12 @@ export const BannerSection = ({ title, description, image, button }: BannerSecti
           <div className="relative rounded-lg overflow-hidden py-[120px] px-[114px] flex flex-col justify-center">
             <div className="relative z-10 flex flex-col gap-8 w-full max-w-[574px]">
               <div className="flex flex-col gap-4">
-                <h1 className="text-white font-semibold text-[56px] leading-[73px] ">{title}</h1>
-                <p className="text-xl font-normal font-sourceSans text-gray-200">{description}</p>
+                <h1 className="text-white font-semibold text-[56px] leading-[73px] ">
+                  {title}
+                </h1>
+                <p className="text-xl font-normal font-sourceSans text-gray-200">
+                  {description}
+                </p>
               </div>
               {button && (
                 <div className="flex gap-6">

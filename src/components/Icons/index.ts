@@ -1,6 +1,6 @@
 export * from "./globeIcon";
 export * from "./rocketIcon";
-export * from "./settingIcon";
+export * from "./SettingIcon";
 export * from "./toolIcon";
 export * from "./Facebook";
 export * from "./Instagram";

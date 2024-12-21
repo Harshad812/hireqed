@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/Button";
-import { HiringImage1, HiringImage2 } from "@/images";
+import { HiringImage1 } from "@/images";
 import { FC } from "react";
 import clsx from "clsx";
 import { Timeline } from "../Timeline";
@@ -9,11 +9,11 @@ interface HiringJourneyDetailsData {
   step: number;
   title: string;
   description:
-  | {
-    key: string;
-    value: string;
-  }[]
-  | string;
+    | {
+        key: string;
+        value: string;
+      }[]
+    | string;
 }
 
 const HiringJourneyDetailsData: HiringJourneyDetailsData[] = [

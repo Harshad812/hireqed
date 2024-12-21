@@ -1,10 +1,10 @@
 import { Button } from "@/components/Button";
 interface AboutUsSectionProps {
   title: string;
-  button: string;
+  withButton: boolean;
 }
 
-export const AboutUsSection = ({ title, button }: AboutUsSectionProps) => {
+export const AboutUsSection = ({ title, withButton }: AboutUsSectionProps) => {
   return (
     <section className="">
       <div className="py-[100px]">
@@ -15,7 +15,7 @@ export const AboutUsSection = ({ title, button }: AboutUsSectionProps) => {
                 <h2 className="text-[40px] leading-[54px] font-semibold text-white">
                   {title}
                 </h2>
-                {button && (
+                {withButton && (
                   <Button
                     variant="outline"
                     label="More About Us"

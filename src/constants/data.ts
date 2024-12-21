@@ -23,7 +23,7 @@ import {
 import {
   globeIcon,
   rocketIcon,
-  settingIcon,
+  SettingIcon,
   toolIcon,
   MoneyBagIcon,
   EarthWithStandIcon,
@@ -175,7 +175,7 @@ export const whyUsData = [
   },
   {
     id: 2,
-    logo: settingIcon,
+    logo: SettingIcon,
     title: "Streamlined  Process",
     description:
       "Manage everything from searching and interviewing to onboarding and performance tracking on a single platform.",

@@ -1,4 +1,9 @@
-import { AboutUsSection, BannerSection, PromoSection, TestimonialsSection } from "@/components";
+import {
+  AboutUsSection,
+  BannerSection,
+  PromoSection,
+  TestimonialsSection,
+} from "@/components";
 import { OurCoreValues, OurCulture, OurSection } from "@/components/AboutUs";
 import { AboutUsHeroImage } from "@/images";
 
@@ -12,7 +17,10 @@ export const AboutUsContainer = () => {
       />
       <OurSection />
       <OurCoreValues />
-      <AboutUsSection title="Our leadership is driven by integrity and a commitment to empower teams. By promoting open communication and fostering innovation, we lead with purpose and accountability." button={false} />
+      <AboutUsSection
+        title="Our leadership is driven by integrity and a commitment to empower teams. By promoting open communication and fostering innovation, we lead with purpose and accountability."
+        withButton={false}
+      />
       <OurCulture />
       <TestimonialsSection />
       <PromoSection />
