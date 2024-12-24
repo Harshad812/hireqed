@@ -14,7 +14,7 @@ export const OurSection = () => {
 
     return (
         <section>
-            <div className="pb-[100px]">
+            <div className="2xl:pb-[80px] xl:pb-[70px] md:pb-[60px] pb-[50px]">
                 <div className="container">
                     <div className="w-full mx-auto max-w-[1156px]">
                         <div className="grid grid-cols-2 gap-6">

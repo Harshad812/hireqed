@@ -112,6 +112,7 @@ const config: Config = {
       "2xl": "1400px",
       laptop: "1440px",
       "3xl": "1500px",
+      "4xl": "1600px",
     },
     // fontFamily: {
     //   poppins: ['"Poppins", sans-serif'],
@@ -131,18 +132,32 @@ const config: Config = {
           width: "100%",
           maxWidth: "100%",
           margin: "0 auto",
-          padding: "0 24px",
+          padding: "0 16px",
           "@screen sm": {
-            maxWidth: "640px",
+            maxWidth: "740px",
+            padding: "0 20px",
           },
           "@screen md": {
-            maxWidth: "768px",
+            maxWidth: "940px",
+            padding: "0 24px",
           },
           "@screen lg": {
+            maxWidth: "1140px",
+          },
+          "@screen xl": {
             maxWidth: "1280px",
           },
           "@screen 2xl": {
             maxWidth: "1440px",
+          },
+          "@screen laptop": {
+            maxWidth: "1440px",
+          },
+          "@screen 3xl": {
+            maxWidth: "1500px",
+          },
+          "@screen 4xl": {
+            maxWidth: "1600px",
           },
         },
       });

@@ -7,12 +7,12 @@ interface AboutUsSectionProps {
 export const AboutUsSection = ({ title, withButton }: AboutUsSectionProps) => {
   return (
     <section className="">
-      <div className="py-[100px]">
+      <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
           <div className="bg-primary-gradient rounded-lg overflow-hidden">
-            <div className=" py-[160px] px-[116px] bg-about-bg bg-no-repeat bg-[length:100%_100%]">
-              <div className="text-center flex flex-col items-center justify-center gap-12">
-                <h2 className="text-[40px] leading-[54px] font-semibold text-white">
+            <div className="2xl:py-[160px] lg:py-[120px] py-[100px] 2xl:px-[116px] lg:px-[100px] md:px-[80px] sm:px-[40px] px-4 bg-about-bg bg-no-repeat bg-[length:100%_100%]">
+              <div className="text-center flex flex-col sm:items-center justify-center md:gap-12 sm:gap-9 gap-6">
+                <h2 className="2xl:text-[40px] 2xl:leading-[54px] xl:leading-normal sm:leading-normal xl:text-4xl sm:text-3xl text-2xl font-semibold text-white">
                   {title}
                 </h2>
                 {withButton && (
@@ -20,7 +20,7 @@ export const AboutUsSection = ({ title, withButton }: AboutUsSectionProps) => {
                     variant="outline"
                     label="More About Us"
                     type="submit"
-                    className="py-4 px-8 text-base leading-5 font-medium rounded-lg capitalize text-white border-white hover:bg-white-100 transition-all duration-500 ease-in"
+                    className="sm:py-4 py-3 sm:mx-0 mx-[11px] px-8 text-base  leading-5 font-medium rounded-lg capitalize text-white border-white hover:bg-white-100 transition-all duration-500 ease-in"
                   />
                 )}
               </div>

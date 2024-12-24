@@ -3,15 +3,15 @@ import { Button } from "@/components/Button";
 export const OurProcess = () => {
   return (
     <section>
-      <div className="py-[100px]">
+      <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
           <div className="bg-primary-gradient rounded-lg py-[88px] px-[118px]">
             <div className="flex items-center justify-between gap-7">
               <div className="flex flex-col gap-6 w-full max-w-[448px]">
-                <h2 className="text-white font-semibold text-5xl leading-[62px]">
+                <h2 className="text-white font-semibold 2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl 2xl:leading-[62px]">
                   Our Process? It’s Simple.
                 </h2>
-                <p className="text-primary-800 font-normal text-xl font-sourceSans">
+                <p className="text-primary-800 font-normal text-xl font-source">
                   Our streamlined process ensures every project is handled
                   smoothly from start to finish.
                 </p>
@@ -27,7 +27,7 @@ export const OurProcess = () => {
                     </h2>
                   </div>
                   <div>
-                    <p className="text-xl font-normal text-gray-600 font-sourceSans">
+                    <p className="text-xl font-normal text-gray-600 font-source">
                       {`
                       Reach out to our team to talk about the best way we can
                       work together. We'll see how our partnership can fit your

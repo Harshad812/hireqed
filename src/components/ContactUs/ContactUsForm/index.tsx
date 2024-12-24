@@ -3,7 +3,7 @@ import { Button } from "@/components/Button";
 export const ContactUsForm = () => {
   return (
     <section>
-      <div className="py-[100px]">
+      <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
           <div className="flex justify-between gap-10 w-full max-w-[1156px] mx-auto">
             <div className="flex flex-col gap-12 w-full max-w-[566px]">
@@ -92,7 +92,7 @@ export const ContactUsForm = () => {
                   <h6 className="text-primary-400 text-xl font-medium">
                     Email
                   </h6>
-                  <ul className="*:text-xl *:leading-[30px] *:font-normal *:font-sourceSans *:text-gray-600">
+                  <ul className="*:text-xl *:leading-[30px] *:font-normal *:font-source *:text-gray-600">
                     <li>
                       <span className="font-semibold">General Inquiries:</span>{" "}
                       info@hireqed.ai
@@ -111,7 +111,7 @@ export const ContactUsForm = () => {
                   <h6 className="text-primary-400 text-xl font-medium">
                     Phone
                   </h6>
-                  <ul className="*:text-xl *:leading-[30px] *:font-normal *:font-sourceSans *:text-gray-600">
+                  <ul className="*:text-xl *:leading-[30px] *:font-normal *:font-source *:text-gray-600">
                     <li>
                       <span className="font-semibold">USA:</span> +1 (800)
                       123-4567

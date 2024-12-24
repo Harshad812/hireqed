@@ -20,10 +20,10 @@ export const Content: React.FC<ContentProps> = ({
   buttonLabel,
 }) => {
   return (
-    <div className="">
-      <div className="flex flex-col gap-14">
+    <div className="lg:px-0 sm:px-[30px] px-3">
+      <div className="flex flex-col xl:gap-14 md:gap-12 sm:gap-10 gap-8">
         <div className="flex flex-col gap-4">
-          <div className="size-12">
+          <div className="sm:size-12 size-8">
             <Image
               src={imageSrc}
               alt={imageAlt}
@@ -31,11 +31,11 @@ export const Content: React.FC<ContentProps> = ({
               priority={true}
             />
           </div>
-          <div className="flex flex-col gap-6">
-            <h3 className="text-[40px] leading-[52px] font-medium bg-primary-gradient bg-clip-text text-fill-transparent inline-block">
+          <div className="flex flex-col sm:gap-6 gap-4">
+            <h3 className="2xl:text-[40px] 2xl:leading-[52px] lg:text-4xl sm:text-3xl text-2xl font-medium bg-primary-gradient bg-clip-text text-fill-transparent inline-block">
               {title}
             </h3>
-            <p className="text-gray-600 text-xl font-normal font-sourceSans">
+            <p className="text-gray-600 xl:text-xl md:text-lg text-base font-normal font-source">
               {description}
             </p>
           </div>
@@ -45,7 +45,7 @@ export const Content: React.FC<ContentProps> = ({
             variant="fill"
             label={buttonLabel}
             type="submit"
-            className="py-4 px-8 text-base leading-5 font-poppins font-medium rounded-lg text-white border-0 bg-accent-300 hover:bg-accent-200 transition-all duration-500 ease-in"
+            className="sm:py-4 py-3 px-8 text-base leading-5 font-poppins font-medium rounded-lg text-white border-0 bg-accent-300 hover:bg-accent-200 transition-all duration-500 ease-in"
           />
         </div>
       </div>
@@ -56,16 +56,16 @@ export const Content: React.FC<ContentProps> = ({
 export const ServicesSection = () => {
   return (
     <section className="">
-      <div className="py-[100px]">
+      <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col md:gap-12 gap-10">
             <div className="text-center">
-              <h2 className="text-5xl leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">
+              <h2 className="2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl 2xl:leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">
                 Elevating Your Projects with Expert Solutions
               </h2>
             </div>
-            <div className="shadow-card rounded-lg flex flex-row">
-              <div className="py-[61px] px-[60px] w-full max-w-[calc(100%-440px)]">
+            <div className="shadow-card rounded-lg flex lg:flex-row flex-col">
+              <div className="2xl:py-[61px] lg:py-12 md:py-10 sm:py-7 py-4 laptop:ps-[60px] 2xl:ps-[50px] lg:ps-[30px] laptop:pe-[60px] 2xl:pe-[30px] xl:pe-[30px] w-full 2xl:max-w-[calc(100%-440px)] lg:max-w-[calc(100%-400px)]">
                 <div className="flex flex-col gap-20">
                   {/* Loop through servicesData */}
                   <Tabs tabs={servicesData.map((item) => item.title)}>
@@ -83,7 +83,7 @@ export const ServicesSection = () => {
                   </Tabs>
                 </div>
               </div>
-              <div className="w-full max-w-[440px]">
+              <div className="w-full 2xl:max-w-[440px] lg:max-w-[400px]">
                 <Image
                   src={IllustrationImage}
                   alt="service-image"
@@ -94,7 +94,7 @@ export const ServicesSection = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };

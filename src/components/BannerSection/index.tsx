@@ -20,7 +20,7 @@ export const BannerSection = ({
 }: BannerSectionProps) => {
   return (
     <section className="banner-section">
-      <div className="pb-[100px]">
+      <div className="2xl:pb-[80px] xl:pb-[70px] md:pb-[60px] pb-[50px]">
         <div className="container">
           <div className="relative rounded-lg overflow-hidden py-[120px] px-[114px] flex flex-col justify-center">
             <div className="relative z-10 flex flex-col gap-8 w-full max-w-[574px]">
@@ -28,7 +28,7 @@ export const BannerSection = ({
                 <h1 className="text-white font-semibold text-[56px] leading-[73px] ">
                   {title}
                 </h1>
-                <p className="text-xl font-normal font-sourceSans text-gray-200">
+                <p className="text-xl font-normal font-source text-gray-200">
                   {description}
                 </p>
               </div>

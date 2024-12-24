@@ -9,11 +9,11 @@ interface HiringJourneyDetailsData {
   step: number;
   title: string;
   description:
-    | {
-        key: string;
-        value: string;
-      }[]
-    | string;
+  | {
+    key: string;
+    value: string;
+  }[]
+  | string;
 }
 
 const HiringJourneyDetailsData: HiringJourneyDetailsData[] = [
@@ -154,7 +154,7 @@ const HiringJourneyDetailsCard: FC<HiringJourneyDetailsCardProps> = ({
             <div className="flex flex-col">
               {item?.description?.map((item, i) => (
                 <p
-                  className="text-xl leading-[26px] text-gray-600 font-light font-sourceSans"
+                  className="text-xl leading-[26px] text-gray-600 font-light font-source"
                   key={i}
                 >
                   <b className="font-semibold">{item.key}:</b>{" "}
@@ -163,7 +163,7 @@ const HiringJourneyDetailsCard: FC<HiringJourneyDetailsCardProps> = ({
               ))}
             </div>
           ) : (
-            <p className="text-xl leading-[26px] text-gray-600 font-normal font-sourceSans">
+            <p className="text-xl leading-[26px] text-gray-600 font-normal font-source">
               {item?.description}
             </p>
           )}
@@ -176,11 +176,11 @@ const HiringJourneyDetailsCard: FC<HiringJourneyDetailsCardProps> = ({
 export const HiringJourney = () => {
   return (
     <section className="hero-section font-source">
-      <div className="py-[100px]">
+      <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
           <div className="flex flex-col gap-12">
             <div className="text-center">
-              <h2 className="text-5xl leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">
+              <h2 className="2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl 2xl:leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">
                 Your Hiring Journey Starts Here
               </h2>
             </div>

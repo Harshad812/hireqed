@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export const Footer = () => {
   return (
-    <section className="pt-[100px]">
-      <div className="bg-primary-900 py-20">
+    <section className="2xl:pt-[80px] xl:pt-[70px] md:pt-[60px] pt-[50px]">
+      <div className="bg-primary-900 sm:pt-20 pt-14 lg:pb-20 md:pb-14 sm:pb-12 pb-10">
         <div className="container">
           <div className="flex flex-col sm:gap-20 gap-5">
             <div className="flex md:flex-row flex-col flex-wrap justify-between 2xl:gap-20 xl:gap-16 md:gap-10 sm:gap-8 gap-4">
