@@ -47,7 +47,7 @@ export const TestimonialsSection = () => {
             <div className="w-full max-w-[1206px] mx-auto">
               <Slider {...settings} className="testimonials-slider sm:px-5 sm:pb-0 pb-[90px]">
                 {testimonials.map((testimonial, index) => (
-                  <div className="w-full max-w-[1206px] mx-auto" key={index}>
+                  <div className="w-full max-w-[1206px] mx-auto p-px" key={index}>
                     <div className="shadow-card rounded-lg overflow-hidden flex sm:flex-row flex-col lg:min-h-[422px] md:min-h-[300px] sm:min-h-[250px]">
                       <div className="w-full lg:max-w-[356px] md:max-w-[280px] sm:max-w-[200px] sm:h-auto h-[340px]">
                         <Image
