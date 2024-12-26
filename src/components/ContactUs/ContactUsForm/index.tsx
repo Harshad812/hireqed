@@ -1,13 +1,54 @@
-"use client"
+"use client";
+
 import { Button } from "@/components/Button";
+import axios from "axios";
 import { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 export const ContactUsForm = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [phone, setPhone] = useState("");
+  const [isLoader, setIsLoader] = useState(false);
+
   const handlePhoneChange = (value: string) => {
-    console.log(value); // The phone number in string format
+    setPhone(value);
   };
+
+  const handleChange = (e: any) => {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      setIsLoader(true);
+      const response = await axios("/api/send-mail", {
+        method: "POST",
+        data: { ...form, phoneNumber: phone },
+      });
+
+      if (response.status === 201) {
+        alert("Mail sent successfully.");
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+        setPhone("");
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setIsLoader(false);
+    }
+  };
+
   return (
     <section>
       <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
@@ -19,7 +60,7 @@ export const ContactUsForm = () => {
               </h2>
               <div className="">
                 <form
-                  action=""
+                  onSubmit={handleSubmit}
                   className="flex flex-col xl:gap-12 md:gap-10 sm:gap-9 gap-[34px]"
                 >
                   <div className="flex flex-col gap-4">
@@ -30,9 +71,11 @@ export const ContactUsForm = () => {
                       Name
                     </label>
                     <input
+                      value={form.name}
+                      onChange={handleChange}
                       type="text"
-                      name="Name"
-                      id="Name"
+                      name="name"
+                      id="name"
                       placeholder="Enter Your full name here"
                       className="shadow-card w-full rounded xl:py-[22px] sm:py-5 py-4 xl:px-8 sm:px-6 px-4 text-gray-600 placeholder:text-gray-600 font-normal outline-none md:leading-5 md:text-base sm:text-sm text-xs"
                     />
@@ -45,9 +88,11 @@ export const ContactUsForm = () => {
                       Email
                     </label>
                     <input
+                      value={form.email}
+                      onChange={handleChange}
                       type="email"
-                      name="Email"
-                      id="Email"
+                      name="email"
+                      id="email"
                       placeholder="Enter Your email here"
                       className="shadow-card w-full rounded xl:py-[22px] sm:py-5 py-4 xl:px-8 sm:px-6 px-4 text-gray-600 placeholder:text-gray-600 font-normal outline-none md:leading-5 md:text-base sm:text-sm text-xs"
                     />
@@ -61,8 +106,8 @@ export const ContactUsForm = () => {
                     </label>
                     <div className="custom-phone-input">
                       <PhoneInput
-                        country={'us'}
-                        value={''}
+                        country={"in"}
+                        value={phone}
                         onChange={handlePhoneChange}
                       />
                     </div>
@@ -75,14 +120,17 @@ export const ContactUsForm = () => {
                       Tell us what you need help with
                     </label>
                     <textarea
-                      name="Message"
-                      id="Message"
+                      value={form.message}
+                      onChange={handleChange}
+                      name="message"
+                      id="message"
                       placeholder="Message"
                       className="shadow-card w-full rounded xl:py-[22px] sm:py-5 py-4 xl:px-8 sm:px-6 px-4 text-gray-600 placeholder:text-gray-600 font-normal outline-none md:leading-5 md:text-base sm:text-sm text-xs sm:min-h-[160px] min-h-[120px] resize-none"
-                    ></textarea>
+                    />
                   </div>
                   <div className="flex flex-col items-center text-center md:gap-8 sm:gap-6 gap-4 lg:max-w-none max-w-[275px] mx-auto">
                     <Button
+                      loading={isLoader}
                       variant="fill"
                       label="Submit"
                       type="submit"
