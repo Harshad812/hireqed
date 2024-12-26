@@ -5,9 +5,13 @@ import { Button } from "../Button";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const path = usePathname();
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -31,11 +35,11 @@ export const Header = () => {
     },
     {
       name: "How it Works",
-      href: "/",
+      href: "/how-it-works",
     },
     {
       name: "Hire Talent",
-      href: "/hire-from-us",
+      href: "/",
     },
     {
       name: "Partner with Us",
@@ -99,17 +103,26 @@ export const Header = () => {
               </div>
             )}
           </div>
-          <div className="menus 2xl:gap-4 xl:gap-3 gap-2 lg:flex hidden items-center">
-            {menus?.map((menu, index) => (
-              <a
-                key={index}
-                href={menu.href}
-                className="2xl:px-2.5 px-2 py-2.5 font-medium xl:text-base text-sm capitalize text-primary-400 hover:text-primary-200 transition-all duration-500 ease-in"
-              >
-                {menu.name}
-              </a>
-            ))}
-          </div>
+          <ul className="menus 2xl:gap-4 xl:gap-3 gap-2 lg:flex hidden items-center">
+            {menus?.map((menu, index) => {
+              const isActive = menu.href === path;
+              return (
+                <li key={index} className="2xl:px-2.5 px-2 py-2.5">
+                  <Link
+                    href={menu.href}
+                    className={clsx(
+                      " before:content-[''] before:absolute before:top-full before:h-px before:bg-primary-200 relative font-medium xl:text-base text-sm capitalize text-primary-400 hover:text-primary-200 transition-all duration-500 ease-in",
+                      {
+                        "before:w-full": isActive,
+                      }
+                    )}
+                  >
+                    {menu.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
           <div className="login lg:flex hidden items-center 2xl:gap-6 xl:gap-5 gap-4">
             <a
               href="#"

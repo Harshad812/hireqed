@@ -27,21 +27,21 @@ export const OurCulture = () => {
   ];
   return (
     <section>
-      <div className="py-[100px]">
+      <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col 2xl:gap-12 lg:gap-10 sm:gap-9 gap-8 sm:px-0 px-[18px]">
             <div className="text-center">
-              <h2 className="text-5xl leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">
+              <h2 className="2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl 2xl:leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">
                 Our Culture: People always first
               </h2>
             </div>
-            <div className="grid grid-cols-4 gap-6">
+            <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
               {ourCardData.map((items, index) => (
                 <div
                   key={index}
-                  className="shadow-card rounded-lg py-7 px-4 flex flex-col gap-6 hover:bg-primary-gradient group min-h-[224px]"
+                  className="shadow-card rounded-lg py-7 px-4 flex flex-col xl:gap-6 lg:gap-5 md:gap-4 gap-3 hover:bg-primary-gradient group sm:min-h-[224px] min-h-[207px]"
                 >
-                  <h2 className="text-[28px] leading-[36px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent group-hover:text-fill-unset group-hover:text-white">
+                  <h2 className="xl:text-[28px] md:text-[26px] text-2xl xl:leading-[36px] md:leading-[34px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent group-hover:text-fill-unset group-hover:text-white">
                     {items.title}
                   </h2>
                   <p className="text-gray-600 text-base font-source font-normal group-hover:text-white">

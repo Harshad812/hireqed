@@ -9,11 +9,11 @@ interface HiringJourneyDetailsData {
   step: number;
   title: string;
   description:
-    | {
-        key: string;
-        value: string;
-      }[]
-    | string;
+  | {
+    key: string;
+    value: string;
+  }[]
+  | string;
 }
 
 const HiringJourneyDetailsData: HiringJourneyDetailsData[] = [
@@ -139,13 +139,13 @@ const HiringJourneyDetailsCard: FC<HiringJourneyDetailsCardProps> = ({
   item,
 }) => {
   return (
-    <div className="shadow-card rounded-lg pt-8 pb-16 px-8 w-full max-w-[589px] font-source">
-      <div className="flex flex-col gap-6">
-        <div className="flex flex-col items-start gap-3">
+    <div className="shadow-card bg-white rounded-lg xl:pt-8 pt-7 sm:pb-16 pb-14 xl:px-8 md:px-6 sm:px-5 px-4 w-full 2xl:max-w-[589px] xl:max-w-[490px] lg:max-w-[420px] max-w-[550px] font-source">
+      <div className="flex flex-col md:gap-6 sm:gap-5 gap-3">
+        <div className="flex flex-col items-start sm:gap-3 gap-1">
           <span className="bg-primary-gradient bg-clip-text text-fill-transparent inline-block text-xs font-medium uppercase">
             {`Step ${item.step}`}
           </span>
-          <h2 className="text-[40px] leading-[52px] inline-block font-medium bg-primary-gradient bg-clip-text text-fill-transparent">
+          <h2 className="2xl:text-[40px] sm:text-4xl text-2xl 2xl:leading-[52px] inline-block font-medium bg-primary-gradient bg-clip-text text-fill-transparent">
             {item.title}
           </h2>
         </div>
@@ -154,7 +154,7 @@ const HiringJourneyDetailsCard: FC<HiringJourneyDetailsCardProps> = ({
             <div className="flex flex-col">
               {item?.description?.map((item, i) => (
                 <p
-                  className="text-xl leading-[26px] text-gray-600 font-light font-sourceSans"
+                  className="sm:text-xl text-base sm:leading-[26px] text-gray-600 font-light font-source"
                   key={i}
                 >
                   <b className="font-semibold">{item.key}:</b>{" "}
@@ -163,7 +163,7 @@ const HiringJourneyDetailsCard: FC<HiringJourneyDetailsCardProps> = ({
               ))}
             </div>
           ) : (
-            <p className="text-xl leading-[26px] text-gray-600 font-normal font-sourceSans">
+            <p className="text-xl leading-[26px] text-gray-600 font-normal font-source">
               {item?.description}
             </p>
           )}
@@ -176,24 +176,24 @@ const HiringJourneyDetailsCard: FC<HiringJourneyDetailsCardProps> = ({
 export const HiringJourney = () => {
   return (
     <section className="hero-section font-source">
-      <div className="py-[100px]">
+      <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
           <div className="flex flex-col gap-12">
             <div className="text-center">
-              <h2 className="text-5xl leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">
+              <h2 className="2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl 2xl:leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">
                 Your Hiring Journey Starts Here
               </h2>
             </div>
             <div className="flex flex-col gap-16">
-              <div className="relative">
+              <div className="relative lg:pt-0 sm:pt-[80px] pt-[50px]">
                 <Timeline />
-                <div className="flex flex-col gap-[100px]">
+                <div className="flex flex-col xl:gap-[100px] lg:gap-20 sm:gap-24 gap-20">
                   {HiringJourneyDetailsData.map((items, index) => (
                     <div
                       className={clsx(
-                        "flex flex-row justify-between items-center",
+                        "flex lg:flex-row flex-col-reverse justify-between items-center lg:gap-0 gap-14",
                         {
-                          "flex-row-reverse": index % 2 !== 0,
+                          "lg:flex-row-reverse flex-col-reverse": index % 2 !== 0,
                         }
                       )}
                       key={index}
@@ -202,7 +202,7 @@ export const HiringJourney = () => {
                         <Image
                           src={HiringImage1}
                           alt="Hiring Image"
-                          className="w-[469px] h-[287px] "
+                          className="xl:w-[469px] w-[420px] xl:h-[287px] h-auto"
                           priority={true}
                         />
                       </div>
