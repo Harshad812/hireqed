@@ -14,6 +14,7 @@ export const AboutUsContainer = () => {
         title="Redefining Talent Solutions for a Smarter Tomorrow"
         description="At HireQED, we connect businesses with top talent and cutting-edge services, driving efficiency and growth through technology and innovation. Our mission is to simplify hiring and resource management, ensuring organizations achieve their goals with the right people at the right time."
         image={AboutUsHeroImage}
+        textStyle="max-w-[806px]"
       />
       <OurSection />
       <OurCoreValues />

@@ -11,16 +11,16 @@ export const HeroSection = () => {
         <div className="container">
           <div className="relative">
             <div className="relative z-10 w-full max-w-[1199px] mx-auto">
-              <div className="xl:pt-[120px] lg:pt-[90px] pt-[80px] xl:pb-[100px] lg:pb-[80px] pb-[60px] sm:px-[70px] px-[15px] flex flex-col gap-8">
-                <div className="sm:px-[40px]">
+              <div className="xl:pt-[120px] lg:pt-[90px] pt-[80px] xl:pb-[100px] lg:pb-[80px] pb-[60px] lg:px-[70px] sm:px-[60px] px-[15px] flex flex-col gap-8">
+                <div className="">
                   <h1 className="2xl:text-[64px] xl:text-6xl lg:text-5xl md:text-4xl text-[32px] 2xl:leading-[96px] xl:leading-snug lg:leading-snug md:leading-snug leading-snug md:text-start text-center font-semibold text-white">
                     We simplify your search for the right talent{" "}
                     <span className="text-accent-300 inline">
                       <TypewriterText
                         texts={[
-                          "at faster speed",
                           "at competitive price",
-                          "from global pool",
+                          "at competitive price",
+                          "at competitive price",
                         ]}
                         typingSpeed={150}
                       />

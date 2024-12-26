@@ -1,6 +1,12 @@
 import { Button } from "@/components/Button";
+import { useState } from "react";
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 
 export const ContactUsForm = () => {
+  const handlePhoneChange = (value: string) => {
+    console.log(value); // The phone number in string format
+  };
   return (
     <section>
       <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
@@ -49,6 +55,13 @@ export const ContactUsForm = () => {
                     >
                       Phone Number
                     </label>
+                    <div className="">
+                      {/* <PhoneInput
+                        country={'us'}
+                        value={''}
+                        onChange={handlePhoneChange}
+                      /> */}
+                    </div>
                   </div>
                   <div className="flex flex-col gap-4">
                     <label

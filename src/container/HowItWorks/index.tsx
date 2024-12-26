@@ -7,7 +7,7 @@ import {
 } from "@/components";
 import { HireUsHeroImage } from "@/images";
 
-export const HireFromUsContainer = () => {
+export const HowItWorksContainer = () => {
   return (
     <div>
       <BannerSection
@@ -18,6 +18,7 @@ export const HireFromUsContainer = () => {
           primaryLabel: "Sign Up",
           secondaryLabel: "Learn More",
         }}
+        textStyle="max-w-[574px]"
       />
       <HiringJourney />
       <ExperienceEfficiency />

@@ -1,9 +1,9 @@
-import { HireFromUsContainer } from "@/container";
+import { HowItWorksContainer } from "@/container";
 
 export default function HireFromUs() {
   return (
     <div className="">
-      <HireFromUsContainer />
+      <HowItWorksContainer />
     </div>
   );
 }

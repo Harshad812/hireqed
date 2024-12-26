@@ -20,6 +20,7 @@ export const PartnerWithUsContainer = () => {
           primaryLabel: "Join Now",
           secondaryLabel: "Get Started",
         }}
+        textStyle="xl:max-w-[570px] max-w-[510px]"
       />
       <PartnerWithHireQED />
       <OurProcess />
