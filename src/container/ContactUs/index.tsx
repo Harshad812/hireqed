@@ -13,6 +13,7 @@ export const ContactUsContainer = () => {
         title="Your Professional Support, Just a Message Away"
         description="We are here to help you with all your professional needs. Whether you have questions, need support, or want to learn more about our services, please feel free to reach out to us."
         image={ContactUsHeroImage}
+        textStyle="max-w-[574px]"
       />
       <ContactUsForm />
       <MapSection

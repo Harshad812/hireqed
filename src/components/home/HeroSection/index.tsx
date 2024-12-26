@@ -7,12 +7,12 @@ import { TypewriterText } from "@/components/TypewriterText";
 export const HeroSection = () => {
   return (
     <section className="hero-section">
-      <div className="2xl:pb-[100px] xl:pb-[90px] lg:pb-[80px] pb-[70px]">
+      <div className="2xl:pb-[80px] xl:pb-[70px] md:pb-[60px] pb-[50px]">
         <div className="container">
           <div className="relative">
             <div className="relative z-10 w-full max-w-[1199px] mx-auto">
-              <div className="xl:pt-[120px] lg:pt-[90px] pt-[80px] xl:pb-[100px] lg:pb-[80px] pb-[60px] px-[70px] flex flex-col gap-8">
-                <div className="px-[40px]">
+              <div className="xl:pt-[120px] lg:pt-[90px] pt-[80px] xl:pb-[100px] lg:pb-[80px] pb-[60px] sm:px-[70px] px-[15px] flex flex-col gap-8">
+                <div className="sm:px-[40px]">
                   <h1 className="2xl:text-[64px] xl:text-6xl lg:text-5xl md:text-4xl text-[32px] 2xl:leading-[96px] xl:leading-snug lg:leading-snug md:leading-snug leading-snug md:text-start text-center font-semibold text-white">
                     We simplify your search for the right talent{" "}
                     <span className="text-accent-300 inline">
@@ -28,7 +28,7 @@ export const HeroSection = () => {
                   </h1>
                 </div>
                 <div className="">
-                  <p className="text-gray-200 xl:text-xl lg:text-lg text-base font-normal font-sourceSans text-center">
+                  <p className="text-gray-200 xl:text-xl lg:text-lg text-base font-normal font-source text-center">
                     In today’s fast-paced business world, finding the right
                     resources can be challenging. <br className="lg:block hidden" />
                     At HireQED.ai, we make it easy-connecting you with the

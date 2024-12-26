@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { FC } from "react";
 
 interface TimelineItemProps {
@@ -20,19 +21,22 @@ const TimelineItem: FC<TimelineItemProps> = ({ gradient, icon }) => {
 
 export const Timeline = () => {
   return (
-    <div className="flex flex-col h-full absolute left-1/2 -translate-x-1/2 py-[112px]">
+    <div className="flex flex-col h-full absolute top-0 -z-1 left-1/2 -translate-x-1/2 lg:py-[112px]">
       {Array(8)
         .fill(0)
         .map((_, index) => (
-          <div className="flex flex-col flex-1 items-center" key={index}>
-            {/* index === 0 h-[387px]
-             index === 1 h-[420px]
-             index === 2 h-[440px]
-             index === 3 h-[394px]
-             index === 4 h-[418px]
-             index === 5 h-[457px]
-             index === 6 h-[545px] */}
-            {/* Timeline Item */}
+          <div
+            key={index}
+            className={clsx("flex flex-col flex-1 items-center", {
+              "h-[387px]": index === 0,
+              "h-[420px]": index === 1,
+              "h-[440px]": index === 2,
+              "h-[394px]": index === 3,
+              "h-[418px]": index === 4,
+              "h-[457px]": index === 5,
+              "h-[545px]": index === 6,
+            })}
+          >
             <TimelineItem
               gradient={` ${index === 0 ? "bg-primary-gradient" : "bg-primary-1100"}`}
               icon={
@@ -58,7 +62,8 @@ export const Timeline = () => {
               <div className="w-px flex-grow border-primary-1000 bg-primary-1000"></div>
             )}
           </div>
-        ))}
-    </div>
+        ))
+      }
+    </div >
   );
 };

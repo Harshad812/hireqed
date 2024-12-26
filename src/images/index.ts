@@ -31,3 +31,8 @@ export { default as AboutUsHeroImage } from "./about-us-hero-bg.png";
 export { default as ExcellenceImage } from "./Excellence-img.png";
 export { default as FlawlessCommunicationImage } from "./Flawless-Communication-img.png";
 export { default as CollaborationImage } from "./Collaboration-img.png";
+export { default as NorthAmericaMap } from "./NorthAmerica-map.png";
+export { default as AfricaMap } from "./Africa-map.png";
+export { default as EuropeMap } from "./Europe-map.png";
+export { default as MiddleEastMap } from "./MiddleEast-map.png";
+export { default as AsiaMap } from "./Asia-map.png";

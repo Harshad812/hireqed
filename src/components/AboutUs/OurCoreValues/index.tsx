@@ -8,17 +8,17 @@ import Image from "next/image";
 export const OurCoreValues = () => {
   return (
     <section>
-      <div className="py-[100px]">
+      <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
-          <div className="flex flex-col gap-12 w-full mx-auto max-w-[1046px]">
-            <div className="text-center w-full mx-auto max-w-[1020px]">
-              <h2 className="text-5xl leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">
+          <div className="flex flex-col 2xl:gap-12 lg:gap-10 sm:gap-9 gap-8 w-full mx-auto xl:max-w-[1046px] xl:px-0 sm:px-5 px-[18px]">
+            <div className="text-center w-full mx-auto 2xl:max-w-[1020px] max-w-[760px]">
+              <h2 className="2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl 2xl:leading-[62px] lg:leading-[58px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">
                 Our Core Values Shape Every Step Toward Excellence
               </h2>
             </div>
-            <div className="grid grid-cols-3 gap-6">
-              <div className="shadow-card rounded-lg py-7 px-4 flex flex-col gap-6 hover:bg-primary-gradient group min-h-[224px]">
-                <h2 className="text-[28px] leading-[36px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent group-hover:text-fill-unset group-hover:text-white">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+              <div className="shadow-card rounded-lg py-7 px-4 flex flex-col xl:gap-6 lg:gap-5 md:gap-4 gap-3 hover:bg-primary-gradient group sm:min-h-[224px] min-h-[207px]">
+                <h2 className="xl:text-[28px] md:text-[26px] text-2xl xl:leading-[36px] md:leading-[34px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent group-hover:text-fill-unset group-hover:text-white">
                   Trustworthiness
                 </h2>
                 <p className="text-gray-600 text-base font-source font-normal group-hover:text-white">
@@ -26,8 +26,8 @@ export const OurCoreValues = () => {
                   our clients and partners can count on us.
                 </p>
               </div>
-              <div className="shadow-card rounded-lg py-7 px-4 flex flex-col gap-6 hover:bg-primary-gradient group min-h-[224px]">
-                <h2 className="text-[28px] leading-[36px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent group-hover:text-fill-unset group-hover:text-white">
+              <div className="shadow-card rounded-lg py-7 px-4 flex flex-col xl:gap-6 lg:gap-5 md:gap-4 gap-3 hover:bg-primary-gradient group sm:min-h-[224px] min-h-[207px]">
+                <h2 className="xl:text-[28px] md:text-[26px] text-2xl xl:leading-[36px] md:leading-[34px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent group-hover:text-fill-unset group-hover:text-white">
                   Integrity First
                 </h2>
                 <p className="text-gray-600 text-base font-source font-normal group-hover:text-white">
@@ -35,8 +35,8 @@ export const OurCoreValues = () => {
                   that our clients and team members are informed and engaged.
                 </p>
               </div>
-              <div className="shadow-card rounded-lg py-7 px-4 flex flex-col gap-6 hover:bg-primary-gradient group min-h-[224px]">
-                <h2 className="text-[28px] leading-[36px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent group-hover:text-fill-unset group-hover:text-white">
+              <div className="shadow-card rounded-lg py-7 px-4 flex flex-col xl:gap-6 lg:gap-5 md:gap-4 gap-3 hover:bg-primary-gradient group sm:min-h-[224px] min-h-[207px]">
+                <h2 className="xl:text-[28px] md:text-[26px] text-2xl xl:leading-[36px] md:leading-[34px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent group-hover:text-fill-unset group-hover:text-white">
                   Quality
                 </h2>
                 <p className="text-gray-600 text-base font-source font-normal group-hover:text-white">
@@ -45,8 +45,8 @@ export const OurCoreValues = () => {
                   detail.
                 </p>
               </div>
-              <div className="shadow-card rounded-lg py-7 px-4 flex flex-col gap-6 min-h-[451px]">
-                <h2 className="text-[28px] leading-[36px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent">
+              <div className="shadow-card rounded-lg py-7 px-4 flex flex-col xl:gap-6 lg:gap-5 md:gap-4 gap-3 sm:min-h-[451px] min-h-[420px]">
+                <h2 className="xl:text-[28px] md:text-[26px] text-2xl xl:leading-[36px] md:leading-[34px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent">
                   Excellence
                 </h2>
                 <p className="text-gray-600 text-base font-source font-normal min-h-[80px]">
@@ -66,8 +66,8 @@ export const OurCoreValues = () => {
                   />
                 </div>
               </div>
-              <div className="shadow-card rounded-lg py-7 px-4 flex flex-col gap-6 min-h-[451px]">
-                <h2 className="text-[28px] leading-[36px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent">
+              <div className="shadow-card rounded-lg py-7 px-4 flex flex-col xl:gap-6 lg:gap-5 md:gap-4 gap-3 sm:min-h-[451px] min-h-[420px]">
+                <h2 className="xl:text-[28px] md:text-[26px] text-2xl xl:leading-[36px] md:leading-[34px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent">
                   Flawless Communication
                 </h2>
                 <p className="text-gray-600 text-base font-source font-normal min-h-[80px]">
@@ -85,8 +85,8 @@ export const OurCoreValues = () => {
                   />
                 </div>
               </div>
-              <div className="shadow-card rounded-lg py-7 px-4 flex flex-col gap-6 min-h-[451px]">
-                <h2 className="text-[28px] leading-[36px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent">
+              <div className="shadow-card rounded-lg py-7 px-4 flex flex-col xl:gap-6 lg:gap-5 md:gap-4 gap-3 sm:min-h-[451px] min-h-[420px]">
+                <h2 className="xl:text-[28px] md:text-[26px] text-2xl xl:leading-[36px] md:leading-[34px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent">
                   Collaboration
                 </h2>
                 <p className="text-gray-600 text-base font-source font-normal min-h-[80px]">

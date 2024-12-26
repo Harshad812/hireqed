@@ -4,9 +4,15 @@ import { Logo } from "@/images";
 import { Button } from "../Button";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const path = usePathname();
+
+  console.log("path123", path)
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -22,7 +28,6 @@ export const Header = () => {
       document.body.classList.remove("overflow-hidden");
     };
   }, [isOpen]);
-
 
   const menus = [
     {
@@ -57,7 +62,10 @@ export const Header = () => {
             </a>
           </div>
           <div className="lg:hidden block">
-            <div className={`hamburger ${isOpen ? 'is-active' : ''}`} onClick={toggleMenu}>
+            <div
+              className={`hamburger ${isOpen ? "is-active" : ""}`}
+              onClick={toggleMenu}
+            >
               <span className="line"></span>
               <span className="line opacity-0"></span>
               <span className="line"></span>
@@ -68,13 +76,13 @@ export const Header = () => {
                   <div className="flex flex-col gap-3 py-4 bg-white h-[calc(100vh-102px)] overflow-y-auto">
                     <div className="menus gap-[22px] lg:hidden flex flex-col">
                       {menus?.map((menu, index) => (
-                        <a
+                        <Link
                           key={index}
                           href={menu.href}
                           className="py-2.5 font-medium text-base capitalize text-primary-400 hover:text-primary-200 transition-all duration-500 ease-in"
                         >
                           {menu.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                     <div className="flex flex-col gap-3">
@@ -97,15 +105,21 @@ export const Header = () => {
             )}
           </div>
           <div className="menus 2xl:gap-4 xl:gap-3 gap-2 lg:flex hidden items-center">
-            {menus?.map((menu, index) => (
-              <a
-                key={index}
-                href={menu.href}
-                className="2xl:px-2.5 px-2 py-2.5 font-medium xl:text-base text-sm capitalize text-primary-400 hover:text-primary-200 transition-all duration-500 ease-in"
-              >
-                {menu.name}
-              </a>
-            ))}
+            {menus?.map((menu, index) => {
+              const isActive = menu.href === path
+              return (
+                <a
+                  key={index}
+                  href={menu.href}
+                  className={clsx("2xl:px-2.5 px-2 py-2.5 font-medium xl:text-base text-sm capitalize text-primary-400 hover:text-primary-200 transition-all duration-500 ease-in", {
+                    "text-red-500": isActive
+                  })}
+                >
+                  {menu.name}
+                </a>
+              )
+            }
+            )}
           </div>
           <div className="login lg:flex hidden items-center 2xl:gap-6 xl:gap-5 gap-4">
             <a
