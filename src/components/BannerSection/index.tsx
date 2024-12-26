@@ -11,19 +11,21 @@ interface BannerSectionProps {
     secondaryLabel?: string;
     secondaryOnClick?: () => void;
   };
+  textStyle?: string;
 }
 export const BannerSection = ({
   title,
   description,
   image,
   button,
+  textStyle
 }: BannerSectionProps) => {
   return (
     <section className="banner-section">
       <div className="2xl:pb-[80px] xl:pb-[70px] md:pb-[60px] pb-[50px]">
         <div className="container">
           <div className="relative rounded-lg overflow-hidden 2xl:py-[120px] py-[100px] 2xl:px-[114px] px-[100px] flex flex-col justify-center">
-            <div className="relative z-10 flex flex-col gap-8 w-full max-w-[574px]">
+            <div className={`relative z-10 flex flex-col gap-8 w-full ${textStyle}`}>
               <div className="flex flex-col sm:gap-4 gap-6">
                 <h1 className="text-white font-semibold 2xl:text-[56px] xl:text-[50px] lg:text-[46px] md:text-[40px] sm:text-[36px] text-[32px] 2xl:leading-[73px] xl:leading-[63px] lg:leading-[58px] md:leading-[50px] sm:leading-[45px] leading-[42px]">
                   {title}

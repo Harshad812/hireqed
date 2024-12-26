@@ -139,13 +139,13 @@ const HiringJourneyDetailsCard: FC<HiringJourneyDetailsCardProps> = ({
   item,
 }) => {
   return (
-    <div className="shadow-card rounded-lg pt-8 pb-16 px-8 w-full max-w-[589px] font-source">
-      <div className="flex flex-col gap-6">
+    <div className="shadow-card bg-white rounded-lg xl:pt-8 pt-7 sm:pb-16 pb-14 xl:px-8 md:px-6 sm:px-5 px-4 w-full 2xl:max-w-[589px] xl:max-w-[490px] lg:max-w-[420px] max-w-[550px] font-source">
+      <div className="flex flex-col md:gap-6 sm:gap-5 gap-3">
         <div className="flex flex-col items-start gap-3">
           <span className="bg-primary-gradient bg-clip-text text-fill-transparent inline-block text-xs font-medium uppercase">
             {`Step ${item.step}`}
           </span>
-          <h2 className="text-[40px] leading-[52px] inline-block font-medium bg-primary-gradient bg-clip-text text-fill-transparent">
+          <h2 className="2xl:text-[40px] text-4xl 2xl:leading-[52px] inline-block font-medium bg-primary-gradient bg-clip-text text-fill-transparent">
             {item.title}
           </h2>
         </div>
@@ -185,15 +185,15 @@ export const HiringJourney = () => {
               </h2>
             </div>
             <div className="flex flex-col gap-16">
-              <div className="relative">
+              <div className="relative lg:pt-0 pt-[100px]">
                 <Timeline />
-                <div className="flex flex-col gap-[100px]">
+                <div className="flex flex-col xl:gap-[100px] gap-20">
                   {HiringJourneyDetailsData.map((items, index) => (
                     <div
                       className={clsx(
-                        "flex flex-row justify-between items-center",
+                        "flex lg:flex-row flex-col-reverse justify-between items-center lg:gap-0 gap-14",
                         {
-                          "flex-row-reverse": index % 2 !== 0,
+                          "lg:flex-row-reverse flex-col-reverse": index % 2 !== 0,
                         }
                       )}
                       key={index}
@@ -202,7 +202,7 @@ export const HiringJourney = () => {
                         <Image
                           src={HiringImage1}
                           alt="Hiring Image"
-                          className="w-[469px] h-[287px] "
+                          className="xl:w-[469px] w-[420px] xl:h-[287px] h-auto"
                           priority={true}
                         />
                       </div>
