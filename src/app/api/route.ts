@@ -1,4 +1,3 @@
-import { sendEmail } from "@/lib/emailService";
 import corsMiddleware from "@/middlewares/cors";
 import { NextRequest } from "next/server";
 

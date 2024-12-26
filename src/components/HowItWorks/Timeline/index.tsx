@@ -52,12 +52,13 @@ export const Timeline: React.FC = () => {
       { threshold: 0.5 } // Adjust as needed
     );
 
-    itemRefs.current.forEach((item) => {
+    const currentRefs = itemRefs.current;
+    currentRefs.forEach((item) => {
       if (item) observer.observe(item);
     });
 
     return () => {
-      itemRefs.current.forEach((item) => {
+      currentRefs.forEach((item) => {
         if (item) observer.unobserve(item);
       });
     };
@@ -88,16 +89,19 @@ export const Timeline: React.FC = () => {
             "lg:h-[420px] sm:h-[700px] h-[640px]": index === 1,
             "2xl:h-[440px] lg:h-[470px] sm:h-[740px] h-[700px]": index === 2,
             "lg:h-[394px] sm:h-[670px] h-[615px]": index === 3,
-            "2xl:h-[418px] lg:h-[440px] md:h-[730px] sm:h-[720px] h-[650px]": index === 4,
+            "2xl:h-[418px] lg:h-[440px] md:h-[730px] sm:h-[720px] h-[650px]":
+              index === 4,
             "lg:h-[470px] sm:h-[720px] h-[630px]": index === 5,
-            "2xl:h-[545px] xl:h-[495px] lg:h-[570px] sm:h-[840px] h-[780px]": index === 6,
+            "2xl:h-[545px] xl:h-[495px] lg:h-[570px] sm:h-[840px] h-[780px]":
+              index === 6,
           })}
         >
           <TimelineItem
-            gradient={`${activeSteps.includes(index)
-              ? "bg-primary-gradient"
-              : "bg-primary-1100"
-              }`}
+            gradient={`${
+              activeSteps.includes(index)
+                ? "bg-primary-gradient"
+                : "bg-primary-1100"
+            }`}
             icon={
               <div className="">
                 <step.Icon
