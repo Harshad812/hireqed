@@ -1,7 +1,7 @@
 import { Button } from "@/components/Button";
 import { useState } from "react";
-import PhoneInput from 'react-phone-input-2';
-import 'react-phone-input-2/lib/style.css';
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 export const ContactUsForm = () => {
   const handlePhoneChange = (value: string) => {
@@ -17,7 +17,10 @@ export const ContactUsForm = () => {
                 How can we help you?
               </h2>
               <div className="">
-                <form action="" className="flex flex-col xl:gap-12 md:gap-10 sm:gap-9 gap-[34px]">
+                <form
+                  action=""
+                  className="flex flex-col xl:gap-12 md:gap-10 sm:gap-9 gap-[34px]"
+                >
                   <div className="flex flex-col gap-4">
                     <label
                       className="text-primary-400 block font-medium md:text-base sm:text-sm text-xs"

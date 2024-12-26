@@ -12,7 +12,6 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const path = usePathname();
 
-  console.log("path123", path)
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -106,21 +105,23 @@ export const Header = () => {
           </div>
           <ul className="menus 2xl:gap-4 xl:gap-3 gap-2 lg:flex hidden items-center">
             {menus?.map((menu, index) => {
-              const isActive = menu.href === path
+              const isActive = menu.href === path;
               return (
                 <li key={index} className="2xl:px-2.5 px-2 py-2.5">
-                  <a
+                  <Link
                     href={menu.href}
-                    className={clsx(" before:content-[''] before:absolute before:top-full before:h-px before:bg-primary-200 relative font-medium xl:text-base text-sm capitalize text-primary-400 hover:text-primary-200 transition-all duration-500 ease-in", {
-                      "before:w-full": isActive
-                    })}
+                    className={clsx(
+                      " before:content-[''] before:absolute before:top-full before:h-px before:bg-primary-200 relative font-medium xl:text-base text-sm capitalize text-primary-400 hover:text-primary-200 transition-all duration-500 ease-in",
+                      {
+                        "before:w-full": isActive,
+                      }
+                    )}
                   >
                     {menu.name}
-                  </a>
+                  </Link>
                 </li>
-              )
-            }
-            )}
+              );
+            })}
           </ul>
           <div className="login lg:flex hidden items-center 2xl:gap-6 xl:gap-5 gap-4">
             <a

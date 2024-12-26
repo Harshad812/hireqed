@@ -172,6 +172,7 @@ export const whyUsData = [
     title: "Vast pool of Resources",
     description:
       "Access a diverse network of qualified professionals and reliable vendors tailored to meet your project demands.",
+    stroke: true,
   },
   {
     id: 2,
@@ -179,6 +180,7 @@ export const whyUsData = [
     title: "Streamlined  Process",
     description:
       "Manage everything from searching and interviewing to onboarding and performance tracking on a single platform.",
+    stroke: false,
   },
   {
     id: 3,
@@ -186,6 +188,7 @@ export const whyUsData = [
     title: "One-Stop Solution",
     description:
       "Whether you need IT specialists, marketing experts, or project managers, we have the right match for you, supporting your projects from start to finish.",
+    stroke: true,
   },
   {
     id: 4,
@@ -193,6 +196,7 @@ export const whyUsData = [
     title: "Efficiency at Speed",
     description:
       "Accelerate your hiring process and secure the right talent swiftly, allowing you to focus on driving your projects to success.",
+    stroke: true,
   },
   {
     id: 5,
@@ -200,6 +204,7 @@ export const whyUsData = [
     title: "Competitive Pricing",
     description:
       "Enjoy competitive pricing models that suit your budget, offering the best value without compromising on quality.",
+    stroke: false,
   },
   {
     id: 6,
@@ -207,6 +212,7 @@ export const whyUsData = [
     title: "Global Resources",
     description:
       "Connect with professionals from around the world, giving you the flexibility to find the perfect match for your project needs.",
+    stroke: false,
   },
   {
     id: 7,
@@ -214,6 +220,7 @@ export const whyUsData = [
     title: "User-Friendly Experience",
     description:
       "Navigate our intuitive platform with ease, filtering based on your specific requirements and managing engagements seamlessly.",
+    stroke: false,
   },
 ];
 
