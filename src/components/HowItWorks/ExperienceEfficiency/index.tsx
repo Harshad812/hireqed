@@ -45,20 +45,20 @@ export const ExperienceEfficiency = () => {
     <section className="hero-section">
       <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col md:gap-12 gap-10">
             <div className="text-center">
               <h2 className="2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl 2xl:leading-[62px] inline-block font-semibold text-center bg-primary-gradient bg-clip-text text-fill-transparent">
                 Experience Efficiency and Excellence
               </h2>
             </div>
-            <div className="grid grid-cols-4 gap-6">
+            <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 sm:gap-6 gap-8">
               {ExperienceEfficiencyData.map((items, index) => (
                 <div
-                  className="bg-white rounded-lg py-7 px-4 shadow-card min-h-[324px] hover:bg-primary-gradient group"
+                  className="bg-white rounded-lg py-7 px-4 shadow-card sm:min-h-[324px] min-h-[280px] hover:bg-primary-gradient group"
                   key={index}
                 >
-                  <div className="flex flex-col gap-4">
-                    <div className="size-12">
+                  <div className="flex flex-col sm:gap-4 gap-2">
+                    <div className="">
                       <items.logo
                         className={clsx(
                           "sm:w-12 w-8 sm:h-12 h-8 transition-stroke duration-300 ease-in-out",
@@ -77,8 +77,8 @@ export const ExperienceEfficiency = () => {
                         }
                       />
                     </div>
-                    <div className="flex flex-col gap-6">
-                      <h2 className="text-[28px] inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent group-hover:text-fill-unset min-h-[84px] group-hover:text-white">
+                    <div className="flex flex-col sm:gap-6 gap-3">
+                      <h2 className="sm:text-[28px] text-2xl sm:leading-normal inline-block font-semibold bg-primary-gradient bg-clip-text text-fill-transparent group-hover:text-fill-unset xl:min-h-[84px] group-hover:text-white">
                         {items.title}
                       </h2>
                       <p className="text-gray-600 text-base font-normal font-source group-hover:text-white">

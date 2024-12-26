@@ -141,11 +141,11 @@ const HiringJourneyDetailsCard: FC<HiringJourneyDetailsCardProps> = ({
   return (
     <div className="shadow-card bg-white rounded-lg xl:pt-8 pt-7 sm:pb-16 pb-14 xl:px-8 md:px-6 sm:px-5 px-4 w-full 2xl:max-w-[589px] xl:max-w-[490px] lg:max-w-[420px] max-w-[550px] font-source">
       <div className="flex flex-col md:gap-6 sm:gap-5 gap-3">
-        <div className="flex flex-col items-start gap-3">
+        <div className="flex flex-col items-start sm:gap-3 gap-1">
           <span className="bg-primary-gradient bg-clip-text text-fill-transparent inline-block text-xs font-medium uppercase">
             {`Step ${item.step}`}
           </span>
-          <h2 className="2xl:text-[40px] text-4xl 2xl:leading-[52px] inline-block font-medium bg-primary-gradient bg-clip-text text-fill-transparent">
+          <h2 className="2xl:text-[40px] sm:text-4xl text-2xl 2xl:leading-[52px] inline-block font-medium bg-primary-gradient bg-clip-text text-fill-transparent">
             {item.title}
           </h2>
         </div>
@@ -154,7 +154,7 @@ const HiringJourneyDetailsCard: FC<HiringJourneyDetailsCardProps> = ({
             <div className="flex flex-col">
               {item?.description?.map((item, i) => (
                 <p
-                  className="text-xl leading-[26px] text-gray-600 font-light font-source"
+                  className="sm:text-xl text-base sm:leading-[26px] text-gray-600 font-light font-source"
                   key={i}
                 >
                   <b className="font-semibold">{item.key}:</b>{" "}
@@ -185,9 +185,9 @@ export const HiringJourney = () => {
               </h2>
             </div>
             <div className="flex flex-col gap-16">
-              <div className="relative lg:pt-0 pt-[100px]">
+              <div className="relative lg:pt-0 sm:pt-[80px] pt-[50px]">
                 <Timeline />
-                <div className="flex flex-col xl:gap-[100px] gap-20">
+                <div className="flex flex-col xl:gap-[100px] lg:gap-20 sm:gap-24 gap-20">
                   {HiringJourneyDetailsData.map((items, index) => (
                     <div
                       className={clsx(

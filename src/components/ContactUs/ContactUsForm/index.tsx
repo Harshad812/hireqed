@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components/Button";
 import { useState } from "react";
 import PhoneInput from "react-phone-input-2";
@@ -58,12 +59,12 @@ export const ContactUsForm = () => {
                     >
                       Phone Number
                     </label>
-                    <div className="">
-                      {/* <PhoneInput
+                    <div className="custom-phone-input">
+                      <PhoneInput
                         country={'us'}
                         value={''}
                         onChange={handlePhoneChange}
-                      /> */}
+                      />
                     </div>
                   </div>
                   <div className="flex flex-col gap-4">

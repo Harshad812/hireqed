@@ -22,7 +22,7 @@ const TimelineItem: FC<TimelineItemProps> = ({ gradient, icon }) => {
     <div className="flex flex-col items-center">
       {/* Icon Circle */}
       <div
-        className={`flex items-center justify-center w-14 h-14 ${gradient} rounded-full`}
+        className={`flex items-center justify-center xl:w-14 sm:w-12 w-8 xl:h-14 sm:h-12 h-8 ${gradient} rounded-full`}
       >
         {icon}
       </div>
@@ -75,7 +75,7 @@ export const Timeline: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col h-full absolute top-0 -z-1 left-1/2 -translate-x-1/2 lg:py-[112px]">
+    <div className="flex flex-col h-full absolute top-0 -z-1 left-1/2 -translate-x-1/2 2xl:py-[112px] lg:py-[100px]">
       {steps.map((step, index) => (
         <div
           key={index}
@@ -83,26 +83,26 @@ export const Timeline: React.FC = () => {
             itemRefs.current[index] = el;
           }}
           data-index={index}
-          className={clsx("flex flex-col flex-1 items-center", {
-            "h-[387px]": index === 0,
-            "h-[420px]": index === 1,
-            "h-[440px]": index === 2,
-            "h-[394px]": index === 3,
-            "h-[418px]": index === 4,
-            "h-[457px]": index === 5,
-            "h-[545px]": index === 6,
+          className={clsx("flex flex-col items-center", {
+            "lg:h-[410px] sm:h-[730px] h-[630px]": index === 0,
+            "lg:h-[420px] sm:h-[700px] h-[640px]": index === 1,
+            "2xl:h-[440px] lg:h-[470px] sm:h-[740px] h-[700px]": index === 2,
+            "lg:h-[394px] sm:h-[670px] h-[615px]": index === 3,
+            "2xl:h-[418px] lg:h-[440px] md:h-[730px] sm:h-[720px] h-[650px]": index === 4,
+            "lg:h-[470px] sm:h-[720px] h-[630px]": index === 5,
+            "2xl:h-[545px] xl:h-[495px] lg:h-[570px] sm:h-[840px] h-[780px]": index === 6,
           })}
         >
           <TimelineItem
             gradient={`${activeSteps.includes(index)
-                ? "bg-primary-gradient"
-                : "bg-primary-1100"
+              ? "bg-primary-gradient"
+              : "bg-primary-1100"
               }`}
             icon={
               <div className="">
                 <step.Icon
                   strokeWidth="2"
-                  className="w-8 h-8"
+                  className="xl:w-8 sm:w-6 w-4 xl:h-8 sm:h-6 h-4"
                   fill={
                     !step.stroke
                       ? activeSteps.includes(index)
