@@ -113,6 +113,8 @@ const config: Config = {
       laptop: "1440px",
       "3xl": "1500px",
       "4xl": "1600px",
+      "5xl": "1700px",
+      "6xl": "1800px",
     },
     // fontFamily: {
     //   poppins: ['"Poppins", sans-serif'],
@@ -158,6 +160,12 @@ const config: Config = {
           },
           "@screen 4xl": {
             maxWidth: "1600px",
+          },
+          "@screen 5xl": {
+            maxWidth: "1700px",
+          },
+          "@screen 6xl": {
+            maxWidth: "1800px",
           },
         },
       });

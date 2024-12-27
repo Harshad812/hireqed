@@ -13,7 +13,7 @@ export const Tabs: React.FC<TabsProps> = ({ tabs, children }) => {
   return (
     <div className="tabs">
       {/* Tab Navigation */}
-      <div className="flex xl:justify-between laptop:gap-4 gap-6 lg:ms-0 sm:ms-[30px] ms-3 whitespace-nowrap overflow-auto">
+      <div className="flex xl:justify-between laptop:gap-4 gap-6 lg:ms-0 sm:ms-[30px] ms-3 whitespace-nowrap no-scrollbar overflow-auto">
         {tabs.map((tab, index) => (
           <div
             key={index}

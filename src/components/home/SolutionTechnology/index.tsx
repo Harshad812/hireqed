@@ -60,16 +60,15 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
               </h2>
             </div>
             <div className="flex flex-col lg:gap-[60px] md:gap-10 sm:gap-8 gap-6">
-              <div className="flex lg:justify-center whitespace-nowrap overflow-auto xl:gap-4 gap-3">
+              <div className="flex lg:justify-center whitespace-nowrap no-scrollbar overflow-auto xl:gap-4 gap-3">
                 {titleData.map((tab, index) => (
                   <button
                     key={tab.id}
                     onClick={() => handleMenuClick(index)}
-                    className={`xl:text-base md:text-sm sm:text-xs text-[10px] font-medium lg:py-2.5 sm:py-2 py-1 xl:mx-2.5 mx-2 hover:text-primary-200 transition-all duration-300 ease-in border-b-2  ${
-                      selectedTab === index
-                        ? "text-primary-200 border-primary-200"
-                        : "text-primary-400 border-transparent"
-                    }`}
+                    className={`xl:text-base md:text-sm sm:text-xs text-[10px] font-medium lg:py-2.5 sm:py-2 py-1 xl:mx-2.5 mx-2 hover:text-primary-200 transition-all duration-300 ease-in border-b-2  ${selectedTab === index
+                      ? "text-primary-200 border-primary-200"
+                      : "text-primary-400 border-transparent"
+                      }`}
                   >
                     {tab.title}
                   </button>

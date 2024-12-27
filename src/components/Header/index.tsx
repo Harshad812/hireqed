@@ -52,12 +52,12 @@ export const Header = () => {
   ];
 
   return (
-    <header className="py-8 bg-white relative">
+    <header className="sm:py-8 py-6 bg-white relative">
       <div className="container">
         <div className="flex items-center justify-between">
           <div className="logo">
             <a href="/">
-              <Image src={Logo} alt="Logo" className="xl:w-[211px] w-[180px]" />
+              <Image src={Logo} alt="Logo" className="xl:w-[211px] sm:w-[180px] w-[90px]" />
             </a>
           </div>
           <div className="lg:hidden block">
@@ -72,8 +72,8 @@ export const Header = () => {
             {isOpen && (
               <div className="absolute left-0 top-full w-full z-990">
                 <div className="container">
-                  <div className="flex flex-col gap-3 py-4 bg-white h-[calc(100vh-102px)] overflow-y-auto">
-                    <div className="menus gap-[22px] lg:hidden flex flex-col">
+                  <div className="flex flex-col gap-3 py-4 bg-white sm:h-[calc(100vh-102px)] h-[calc(100vh-76px)] no-scrollbar overflow-y-auto">
+                    <div className="menus lg:gap-[22px] md:gap-4 gap-3 lg:hidden flex flex-col">
                       {menus?.map((menu, index) => (
                         <Link
                           key={index}
