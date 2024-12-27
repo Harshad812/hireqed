@@ -18,9 +18,9 @@ export const HeroSection = () => {
                     <span className="text-accent-300 inline">
                       <TypewriterText
                         texts={[
+                          "at faster speed",
                           "at competitive price",
-                          "at competitive price",
-                          "at competitive price",
+                          "from global pool",
                         ]}
                         typingSpeed={150}
                       />

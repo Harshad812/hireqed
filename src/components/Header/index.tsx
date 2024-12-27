@@ -52,7 +52,7 @@ export const Header = () => {
   ];
 
   return (
-    <header className="sm:py-8 py-6 bg-white relative">
+    <header className="sm:py-8 py-6 bg-white fixed top-0 left-0 w-full z-999">
       <div className="container">
         <div className="flex items-center justify-between">
           <div className="logo">
@@ -78,6 +78,9 @@ export const Header = () => {
                         <Link
                           key={index}
                           href={menu.href}
+                          onClick={() => {
+                            setIsOpen((prev) => !prev);
+                          }}
                           className="py-2.5 font-medium text-base capitalize text-primary-400 hover:text-primary-200 transition-all duration-500 ease-in"
                         >
                           {menu.name}

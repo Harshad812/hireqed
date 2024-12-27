@@ -32,7 +32,9 @@ export default function RootLayout({
         className={`${poppins.variable} ${Source.variable} font-poppins  font-sans`}
       >
         <Header />
-        {children}
+        <div className="xl:pt-[117.6px] lg:pt-[117.6px] sm:pt-[102.39px] pt-[76.5px]">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
