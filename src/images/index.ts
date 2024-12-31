@@ -36,3 +36,36 @@ export { default as AfricaMap } from "./Africa-map.png";
 export { default as EuropeMap } from "./Europe-map.png";
 export { default as MiddleEastMap } from "./MiddleEast-map.png";
 export { default as AsiaMap } from "./Asia-map.png";
+
+export { default as AmazonLogo } from "./amazon-logo.svg";
+export { default as AzureLogo } from "./azure-logo.svg";
+export { default as DockerLogo } from "./docker-logo.svg";
+export { default as GitlabLogo } from "./gitlab-logo.svg";
+export { default as GooglecloudLogo } from "./googlecloud-logo.svg";
+export { default as HemlLogo } from "./heml-logo.svg";
+export { default as JenkinsLogo } from "./jenkins-logo.svg";
+export { default as KubernetsLogo } from "./kubernets-logo.svg";
+export { default as OpenShiftLogo } from "./OpenShift-logo.svg";
+export { default as OracleDataCloudLogo } from "./oracle-data-cloud-logo.svg";
+export { default as PuppetLogo } from "./puppet-logo.svg";
+
+export { default as MysqlLogo } from "./mysql-logo.svg";
+export { default as PostgresqlLogo } from "./postgresql-plain-logo.svg";
+export { default as SqliteLogo } from "./sqlite-logo.svg";
+export { default as OracleLogo } from "./Oracle-logo.svg";
+export { default as MicrosoftSqlLogo } from "./microsoft-sql-logo.svg";
+export { default as RedisLogo } from "./Redis-logo.svg";
+export { default as ElasticLogo } from "./Elastic-logo.svg";
+export { default as AwsDynamodbLogo } from "./aws-dynamodb-logo.svg";
+export { default as CockroachLogo } from "./Cockroach-logo.svg";
+export { default as CassandraLogo } from "./Cassandra-logo.svg";
+
+export { default as KafkaLogo } from "./kafka-logo.svg";
+export { default as HadoopLogo } from "./Hadoop_logo.svg";
+export { default as SparkSvgrepoLogo } from "./spark-svgrepo-logo.svg";
+export { default as ApacheFlinkLogo } from "./Apache-Flink-logo.svg";
+export { default as TableauSvgrepoLogo } from "./tableau-svgrepo-logo.svg";
+export { default as LookerSvgrepoLogo } from "./looker-svgrepo-logo.svg";
+export { default as QlikLogo } from "./Qlik-logo.svg";
+export { default as PowerLogo } from "./power-bi-vector-logo.svg";
+
