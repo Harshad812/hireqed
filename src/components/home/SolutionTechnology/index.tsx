@@ -83,8 +83,9 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
                         {languagesIconData[tabIndex]?.map((icon) => (
                           <div
                             key={icon.id}
-                            className="flex items-center justify-center 2xl:min-w-16 lg:min-w-14 md:min-w-12 sm:min-w-10 min-w-8 2xl:max-w-16 lg:max-w-14 md:max-w-12 sm:max-w-10 max-w-8 2xl:min-h-16 lg:min-h-14 md:min-h-12 sm:min-h-10 min-h-8 2xl:max-h-16 lg:max-h-14 md:max-h-12 sm:max-h-10 max-h-8"
+                            className="flex items-center justify-center 2xl:min-w-16 lg:min-w-14 md:min-w-12 sm:min-w-10 min-w-8 2xl:min-h-16 lg:min-h-14 md:min-h-12 sm:min-h-10 min-h-8"
                           >
+                            {/* 2xl:min-w-16 lg:min-w-14 md:min-w-12 sm:min-w-10 min-w-8 2xl:max-w-16 lg:max-w-14 md:max-w-12 sm:max-w-10 max-w-8 2xl:min-h-16 lg:min-h-14 md:min-h-12 sm:min-h-10 min-h-8 2xl:max-h-16 lg:max-h-14 md:max-h-12 sm:max-h-10 max-h-8 */}
                             <Image
                               src={icon.logo}
                               alt={icon.alt}

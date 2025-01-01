@@ -21,6 +21,7 @@ export { default as RightArrow } from "./right-arrow.svg";
 export { default as HiringImage1 } from "./hiring-img-1.png";
 export { default as HiringImage2 } from "./hiring-img-2.png";
 export { default as HiringImage3 } from "./hiring-img-3.png";
+export { default as HiringImage4 } from "./hiring-img-4.png";
 export { default as AnalyticsLogo } from "./Analytics-logo.svg";
 export { default as TechLogo } from "./Tech-logo.svg";
 export { default as DigitalLogo } from "./Digital-logo.svg";
@@ -36,7 +37,6 @@ export { default as AfricaMap } from "./Africa-map.png";
 export { default as EuropeMap } from "./Europe-map.png";
 export { default as MiddleEastMap } from "./MiddleEast-map.png";
 export { default as AsiaMap } from "./Asia-map.png";
-
 export { default as AmazonLogo } from "./amazon-logo.svg";
 export { default as AzureLogo } from "./azure-logo.svg";
 export { default as DockerLogo } from "./docker-logo.svg";
@@ -48,7 +48,6 @@ export { default as KubernetsLogo } from "./kubernets-logo.svg";
 export { default as OpenShiftLogo } from "./OpenShift-logo.svg";
 export { default as OracleDataCloudLogo } from "./oracle-data-cloud-logo.svg";
 export { default as PuppetLogo } from "./puppet-logo.svg";
-
 export { default as MysqlLogo } from "./mysql-logo.svg";
 export { default as PostgresqlLogo } from "./postgresql-plain-logo.svg";
 export { default as SqliteLogo } from "./sqlite-logo.svg";
@@ -59,7 +58,6 @@ export { default as ElasticLogo } from "./Elastic-logo.svg";
 export { default as AwsDynamodbLogo } from "./aws-dynamodb-logo.svg";
 export { default as CockroachLogo } from "./Cockroach-logo.svg";
 export { default as CassandraLogo } from "./Cassandra-logo.svg";
-
 export { default as KafkaLogo } from "./kafka-logo.svg";
 export { default as HadoopLogo } from "./Hadoop_logo.svg";
 export { default as SparkSvgrepoLogo } from "./spark-svgrepo-logo.svg";
@@ -68,4 +66,12 @@ export { default as TableauSvgrepoLogo } from "./tableau-svgrepo-logo.svg";
 export { default as LookerSvgrepoLogo } from "./looker-svgrepo-logo.svg";
 export { default as QlikLogo } from "./Qlik-logo.svg";
 export { default as PowerLogo } from "./power-bi-vector-logo.svg";
+export { default as TensorFlowLogo } from "./tensorFlow-logo.svg";
+export { default as PytorchLogo } from "./pytorch-logo.svg";
+export { default as OpenAiLogo } from "./OpenAi-logo.svg";
+export { default as GoogleAiLogo } from "./Google-Ai-Logo.svg";
+export { default as HuggingFaceLogo } from "./Hugging-Face-logo.svg";
+export { default as AmazonSageMakerLogo } from "./Amazon-SageMaker-logo.svg";
+export { default as XGBoostLogo } from "./XGBoost-logo.svg";
+
 
