@@ -73,5 +73,22 @@ export { default as GoogleAiLogo } from "./Google-Ai-Logo.svg";
 export { default as HuggingFaceLogo } from "./Hugging-Face-logo.svg";
 export { default as AmazonSageMakerLogo } from "./Amazon-SageMaker-logo.svg";
 export { default as XGBoostLogo } from "./XGBoost-logo.svg";
+export { default as AnsibleLogo } from "./ansible-logo.svg";
+export { default as IbmCloudLogo } from "./ibm-cloud-logo.svg";
+export { default as TravisLogo } from "./travis-logo.svg";
+export { default as ChefLogo } from "./Chef-logo.svg";
+export { default as GitHubActionsLogo } from "./GitHubActions-logo.svg";
+export { default as TerraformLogo } from "./terraform-logo.svg";
+export { default as MongoDBLogo } from "./MongoDB-logo.svg";
+export { default as CloudSpannerLogo } from "./CloudSpanner-logo.svg";
+export { default as CouchbaseLogo } from "./Couchbase-logo.svg";
+export { default as MemSQLLogo } from "./MemSQL-logo.svg";
+export { default as VoltDBLogo } from "./VoltDB-logo.svg";
+export { default as NLTKLogo } from "./NLTK-logo.svg";
+export { default as SpaCyLogo } from "./SpaCy-logo.svg";
+export { default as KerasLogo } from "./Keras-logo.svg";
+export { default as SLearnLogo } from "./S-Learn-logo.svg";
+
+
 
 

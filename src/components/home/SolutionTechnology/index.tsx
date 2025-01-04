@@ -79,11 +79,11 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
                 <Slider ref={sliderRef} {...sliderSettings}>
                   {titleData.map((tab, tabIndex) => (
                     <div key={tab.id} className="2xl:px-[84px]">
-                      <div className="flex items-center sm:justify-between flex-wrap xl:gap-x-[102px] lg:gap-x-[92px] md:gap-x-[60px] sm:gap-x-[42px] gap-x-6 lg:gap-y-12 md:gap-y-10 sm:gap-y-8 gap-y-6">
+                      <div className="flex items-center justify-center flex-wrap xl:gap-x-[102px] lg:gap-x-[92px] md:gap-x-[60px] sm:gap-x-[42px] gap-x-6 lg:gap-y-12 md:gap-y-10 sm:gap-y-8 gap-y-6">
                         {languagesIconData[tabIndex]?.map((icon) => (
                           <div
                             key={icon.id}
-                            className="flex items-center justify-center 2xl:min-w-16 lg:min-w-14 md:min-w-12 sm:min-w-10 min-w-8 2xl:min-h-16 lg:min-h-14 md:min-h-12 sm:min-h-10 min-h-8"
+                            className="flex items-center justify-center 2xl:min-w-16 lg:min-w-14 md:min-w-12 sm:min-w-10 min-w-8 2xl:min-h-16 lg:min-h-14 md:min-h-12 sm:min-h-10 min-h-8 lg:max-w-none md:max-w-[100px] sm:max-w-[80px] max-w-[60px] lg:h-auto sm:h-10 h-8"
                           >
                             {/* 2xl:min-w-16 lg:min-w-14 md:min-w-12 sm:min-w-10 min-w-8 2xl:max-w-16 lg:max-w-14 md:max-w-12 sm:max-w-10 max-w-8 2xl:min-h-16 lg:min-h-14 md:min-h-12 sm:min-h-10 min-h-8 2xl:max-h-16 lg:max-h-14 md:max-h-12 sm:max-h-10 max-h-8 */}
                             <Image
