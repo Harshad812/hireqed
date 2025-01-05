@@ -73,6 +73,7 @@ export const ContactUsForm = () => {
                       Name
                     </label>
                     <input
+                      required
                       value={form.name}
                       onChange={handleChange}
                       type="text"
@@ -90,6 +91,7 @@ export const ContactUsForm = () => {
                       Email
                     </label>
                     <input
+                      required
                       value={form.email}
                       onChange={handleChange}
                       type="email"

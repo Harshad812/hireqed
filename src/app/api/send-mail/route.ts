@@ -8,12 +8,13 @@ export async function POST(req: NextRequest): Promise<Response> {
 
   try {
     const { name, email, message, phoneNumber } = await req.json();
+    const mail = process.env.NEXT_PUBLIC_EMAIL_USER ?? "";
 
     console.log(name, email, message, phoneNumber);
 
     // Step 4: Send payment confirmation email
     const mailOptions = {
-      to: email,
+      to: mail,
       subject: `Payment Confirmation for Order `,
       text: `Hello, \n\n Thank you for your recent payment...`, // Optional plain text fallback
       html: `
