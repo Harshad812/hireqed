@@ -11,13 +11,18 @@ export const Footer = () => {
             <div className="flex md:flex-row flex-col flex-wrap justify-between 2xl:gap-20 xl:gap-16 md:gap-10 sm:gap-8 gap-4">
               <div className="flex flex-col gap-6 w-full 2xl:max-w-[378px] lg:max-w-[290px] mr-auto">
                 <div>
-                  <Image src={Logo} alt="Logo" className="md:w-[211px] sm:w-[160px] w-[125px]" />
+                  <Image
+                    src={Logo}
+                    alt="Logo"
+                    className="md:w-[211px] sm:w-[160px] w-[125px]"
+                  />
                 </div>
                 <div className="lg:max-w-full max-w-[300px] w-full">
                   <p className="text-gray-500 text-xs font-normal">
-                    Empowering businesses with tailored tech solutions, innovative
-                    AI offerings, and unmatched expertise in digital
-                    transformation. Your partner in navigating the future of work.
+                    Empowering businesses with tailored tech solutions,
+                    innovative AI offerings, and unmatched expertise in digital
+                    transformation. Your partner in navigating the future of
+                    work.
                   </p>
                 </div>
               </div>
@@ -189,8 +194,14 @@ export const Footer = () => {
                   <ul className="flex items-center xl:gap-8 md:gap-7 sm:gap-6 gap-5">
                     {socialMediaData.map((items, index) => (
                       <li key={index} className="flex">
-                        <a href={items.link} className="inline-block">
-                          {items.logo && <items.logo className="xl:w-8 xl:h-8 md:w-7 md:h-7 sm:w-6 sm:h-6 w-5 h-5" />}
+                        <a
+                          href={items.link}
+                          className="inline-block"
+                          target="_blank"
+                        >
+                          {items.logo && (
+                            <items.logo className="xl:w-8 xl:h-8 md:w-7 md:h-7 sm:w-6 sm:h-6 w-5 h-5" />
+                          )}
                         </a>
                       </li>
                     ))}

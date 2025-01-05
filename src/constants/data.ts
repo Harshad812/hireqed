@@ -128,7 +128,7 @@ export const languagesIconData = [
     { id: 14, logo: OracleDataCloudLogo, alt: "OracleDataCloud-logo" },
     { id: 15, logo: ChefLogo, alt: "Chef-logo" },
     { id: 16, logo: GitHubActionsLogo, alt: "GitHubActions-logo" },
-    { id: 17, logo: TerraformLogo, alt: "Terraform-logo" }
+    { id: 17, logo: TerraformLogo, alt: "Terraform-logo" },
   ],
   [
     { id: 1, logo: MysqlLogo, alt: "Mysql-logo" },
@@ -303,7 +303,7 @@ export const socialMediaData = [
   },
   {
     id: 2,
-    link: "/",
+    link: "https://x.com/HireQEDai",
     logo: TwitterIcon,
   },
   {
@@ -313,7 +313,7 @@ export const socialMediaData = [
   },
   {
     id: 4,
-    link: "/",
+    link: "https://www.linkedin.com/company/hireqed-ai",
     logo: LinkdinIcon,
   },
   {

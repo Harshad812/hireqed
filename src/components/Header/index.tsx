@@ -34,12 +34,8 @@ export const Header = () => {
       href: "/about-us",
     },
     {
-      name: "How it Works",
-      href: "/how-it-works",
-    },
-    {
       name: "Hire Talent",
-      href: "/",
+      href: "/hire-from-us",
     },
     {
       name: "Partner with Us",
@@ -57,7 +53,11 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           <div className="logo">
             <a href="/">
-              <Image src={Logo} alt="Logo" className="xl:w-[211px] sm:w-[180px] w-[90px]" />
+              <Image
+                src={Logo}
+                alt="Logo"
+                className="xl:w-[211px] sm:w-[180px] w-[90px]"
+              />
             </a>
           </div>
           <div className="lg:hidden block">
