@@ -52,11 +52,11 @@ export const HeroSection = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute bg-black-100 top-0 left-0 w-full 2xl:h-[1023px] xl:h-[880px] lg:h-[750px] md:h-[610px] sm:h-[710px] h-[710px] rounded-lg overflow-hidden sm:before:absolute sm:before:top-0 sm:before:left-0 sm:before:w-full sm:before:h-full sm:before:bg-black sm:before:opacity-75">
+            <div className="absolute bg-black-100 top-0 left-0 w-full 2xl:h-[1023px] xl:h-[880px] lg:h-[750px] md:h-[610px] sm:h-[710px] h-[710px] rounded-lg overflow-hidden before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:opacity-75">
               <Image
                 src={heroBg}
                 alt="Hero Background"
-                className="w-full h-full object-cover sm:block hidden"
+                className="w-full h-full object-cover sm:object-center object-[-280px_0px]"
                 priority={true}
               />
             </div>
