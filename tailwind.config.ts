@@ -105,6 +105,7 @@ const config: Config = {
     },
     screens: {
       mobile: "375px",
+      xs: "420px",
       sm: "576px",
       md: "768px",
       lg: "992px",
