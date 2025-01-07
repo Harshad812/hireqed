@@ -86,22 +86,21 @@ export const Timeline: React.FC = () => {
           data-index={index}
           className={clsx("flex flex-col items-center", {
             "lg:h-[410px] sm:h-[730px] h-[630px]": index === 0,
-            "lg:h-[420px] sm:h-[700px] h-[640px]": index === 1,
-            "2xl:h-[440px] lg:h-[470px] sm:h-[740px] h-[700px]": index === 2,
-            "lg:h-[394px] sm:h-[670px] h-[615px]": index === 3,
-            "2xl:h-[418px] lg:h-[440px] md:h-[730px] sm:h-[720px] h-[650px]":
+            "lg:h-[420px] sm:h-[700px] xs:h-[660px] h-[640px]": index === 1,
+            "2xl:h-[440px] lg:h-[470px] sm:h-[740px] xs:h-[680px] h-[700px]": index === 2,
+            "lg:h-[394px] sm:h-[670px] xs:h-[635px] h-[615px]": index === 3,
+            "2xl:h-[418px] lg:h-[440px] md:h-[730px] sm:h-[720px] xs:h-[630px] h-[650px]":
               index === 4,
-            "lg:h-[470px] sm:h-[720px] h-[630px]": index === 5,
-            "2xl:h-[545px] xl:h-[495px] lg:h-[570px] sm:h-[840px] h-[780px]":
+            "lg:h-[470px] sm:h-[720px] xs:h-[680px] h-[630px]": index === 5,
+            "2xl:h-[545px] xl:h-[495px] lg:h-[570px] sm:h-[840px] xs:h-[735px] h-[780px]":
               index === 6,
           })}
         >
           <TimelineItem
-            gradient={`${
-              activeSteps.includes(index)
-                ? "bg-primary-gradient"
-                : "bg-primary-1100"
-            }`}
+            gradient={`${activeSteps.includes(index)
+              ? "bg-primary-gradient"
+              : "bg-primary-1100"
+              }`}
             icon={
               <div className="">
                 <step.Icon

@@ -139,7 +139,7 @@ const HiringJourneyDetailsCard: FC<HiringJourneyDetailsCardProps> = ({
   item,
 }) => {
   return (
-    <div className="shadow-card bg-white rounded-lg xl:pt-8 pt-7 sm:pb-16 pb-14 xl:px-8 md:px-6 sm:px-5 px-4 w-full 2xl:max-w-[589px] xl:max-w-[490px] lg:max-w-[420px] max-w-[550px] font-source">
+    <div className="shadow-card bg-white rounded-lg xl:pt-8 pt-7 sm:pb-16 pb-14 xl:px-8 md:px-6 sm:px-5 px-4 w-full 2xl:max-w-[589px] xl:max-w-[490px] lg:max-w-[420px] sm:max-w-[550px] xs:max-w-[388px] max-w-[328px] font-source">
       <div className="flex flex-col md:gap-6 sm:gap-5 gap-3">
         <div className="flex flex-col items-start sm:gap-3 gap-1">
           <span className="bg-primary-gradient bg-clip-text text-fill-transparent inline-block text-xs font-medium uppercase">
@@ -202,7 +202,7 @@ export const HiringJourney = () => {
                         <Image
                           src={HiringImage1}
                           alt="Hiring Image"
-                          className="xl:w-[469px] w-[420px] xl:h-[287px] h-auto"
+                          className="xl:w-[469px] sm:w-[420px] xs:w-[388px] w-[328px] xl:h-[287px] h-auto"
                           priority={true}
                         />
                       </div>
