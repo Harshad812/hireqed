@@ -65,10 +65,11 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
                   <button
                     key={tab.id}
                     onClick={() => handleMenuClick(index)}
-                    className={`xl:text-base md:text-sm sm:text-xs text-[10px] font-medium lg:py-2.5 sm:py-2 py-1 xl:mx-2.5 mx-2 hover:text-primary-200 transition-all duration-300 ease-in border-b-2  ${selectedTab === index
-                      ? "text-primary-200 border-primary-200"
-                      : "text-primary-400 border-transparent"
-                      }`}
+                    className={`xl:text-base md:text-sm sm:text-xs text-[10px] font-medium lg:py-2.5 sm:py-2 py-1 xl:mx-2.5 mx-2 hover:text-primary-200 transition-all duration-300 ease-in border-b-2  ${
+                      selectedTab === index
+                        ? "text-primary-200 border-primary-200"
+                        : "text-primary-400 border-transparent"
+                    }`}
                   >
                     {tab.title}
                   </button>
@@ -79,7 +80,7 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
                 <Slider ref={sliderRef} {...sliderSettings}>
                   {titleData.map((tab, tabIndex) => (
                     <div key={tab.id} className="2xl:px-[84px]">
-                      <div className="flex items-center justify-center flex-wrap xl:gap-x-[102px] lg:gap-x-[92px] md:gap-x-[60px] sm:gap-x-[42px] gap-x-6 lg:gap-y-12 md:gap-y-10 sm:gap-y-8 gap-y-6">
+                      <div className="flex items-center flex-wrap xl:gap-x-[102px] lg:gap-x-[92px] md:gap-x-[60px] sm:gap-x-[42px] gap-x-6 lg:gap-y-12 md:gap-y-10 sm:gap-y-8 gap-y-6">
                         {languagesIconData[tabIndex]?.map((icon) => (
                           <div
                             key={icon.id}
