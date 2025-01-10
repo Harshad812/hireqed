@@ -1,6 +1,6 @@
 import Image from "next/image";
 import heroBg from "../../../images/bg-home.png";
-import dashboardImage from "../../../images/Dashboard.png";
+import dashboardImage from "../../../images/Dashboard-hero.png";
 import { Button } from "@/components/Button";
 import { TypewriterText } from "@/components/TypewriterText";
 
