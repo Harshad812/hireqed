@@ -60,7 +60,7 @@ export const HeroSection = () => {
                 priority={true}
               />
             </div>
-            <div className="2xl:max-w-[1152px] xl:max-w-[940px] lg:max-w-[800px] md:max-w-[600px] sm:max-w-[460px]  relative z-10 sm:mx-auto mx-[5px] shadow-sm hover:shadow-md rounded-lg overflow-hidden transition-all duration-300 ease-in hover:scale-[1.02]">
+            <div className="4xl:max-w-[1300px] 2xl:max-w-[1152px] xl:max-w-[940px] lg:max-w-[800px] md:max-w-[600px] sm:max-w-[460px]  relative z-10 sm:mx-auto mx-[5px] shadow-sm hover:shadow-md rounded-lg overflow-hidden transition-all duration-300 ease-in hover:scale-[1.02]">
               <Image
                 src={dashboardImage}
                 alt="Dashboard Image"

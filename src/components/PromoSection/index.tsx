@@ -1,6 +1,6 @@
 import { Button } from "@/components/Button";
 import Image from "next/image";
-import PromoImage from "./../../images/Dashboard.png";
+import PromoImage from "./../../images/Dashboard-hero.png";
 import { FC } from "react";
 import clsx from "clsx";
 
