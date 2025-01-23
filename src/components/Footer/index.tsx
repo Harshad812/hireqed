@@ -33,18 +33,18 @@ export const Footer = () => {
                 <ul className="flex flex-col items-start sm:gap-3 gap-0.5">
                   <li>
                     <a
-                      href="#"
+                      href="/privacy-policy"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Link 1
+                      Privacy Policy
                     </a>
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="/terms-and-condition"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Link 2
+                      Terms and Condition
                     </a>
                   </li>
                   <li>
