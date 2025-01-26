@@ -5,12 +5,13 @@ import { Button } from "../Button";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import clsx from "clsx";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const path = usePathname();
+  const router = useRouter();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -52,13 +53,13 @@ export const Header = () => {
       <div className="container">
         <div className="flex items-center justify-between">
           <div className="logo">
-            <a href="/">
+            <Link href="/">
               <Image
                 src={Logo}
                 alt="Logo"
                 className="xl:w-[211px] sm:w-[180px] w-[90px]"
               />
-            </a>
+            </Link>
           </div>
           <div className="lg:hidden block">
             <div
@@ -95,6 +96,7 @@ export const Header = () => {
                         Login
                       </a>
                       <Button
+                        onClick={() => router.push("/contact-us")}
                         variant="outline"
                         label="Get Started"
                         type="submit"
@@ -134,6 +136,7 @@ export const Header = () => {
               Login
             </a>
             <Button
+              onClick={() => router.push("/contact-us")}
               variant="outline"
               label="Get Started"
               type="submit"

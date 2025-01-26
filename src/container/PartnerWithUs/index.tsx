@@ -26,7 +26,7 @@ export const PartnerWithUsContainer = () => {
       <OurProcess />
       <WhyPartnerWithUs />
       <AboutUsSection
-        title="We aim to empower organizations by connecting them with the right talent swiftly and efficiently, simplifying the hiring process to ensure quality, reliability, and a seamless experience for any project."
+        title="We aim to empower organizations by connecting them with the right resources swiftly and efficiently, streamlining the process to ensure quality, reliability, and a seamless experience for any project. Our platform enables businesses to access a diverse network of skilled professionals and trusted vendors, fostering collaboration and driving success across industries."
         withButton={true}
       />
       <TestimonialsSection />

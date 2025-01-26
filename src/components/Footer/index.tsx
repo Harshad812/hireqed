@@ -1,6 +1,7 @@
 import { socialMediaData } from "@/constants/data";
 import { Logo } from "@/images";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -19,11 +20,25 @@ export const Footer = () => {
                 </div>
                 <div className="lg:max-w-full max-w-[300px] w-full">
                   <p className="text-gray-500 text-xs font-normal">
-                    Empowering businesses with tailored tech solutions,
+                    Empowering businesses with tailored tech resources,
                     innovative AI offerings, and unmatched expertise in digital
-                    transformation. Your partner in navigating the future of
-                    work.
+                    transformation. Your partner in driving success and
+                    navigating the future of work.
                   </p>
+                </div>
+                <div>
+                  <Link
+                    href="/privacy-policy"
+                    className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                  >
+                    Privacy Policy
+                  </Link>
+                  <Link
+                    href="/privacy-policy"
+                    className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                  >
+                    Terms & Conditions
+                  </Link>
                 </div>
               </div>
               <div className="flex flex-col items-start gap-0.5">
@@ -32,36 +47,36 @@ export const Footer = () => {
                 </h6>
                 <ul className="flex flex-col items-start sm:gap-3 gap-0.5">
                   <li>
-                    <a
-                      href="/privacy-policy"
+                    <Link
+                      href="/"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Privacy Policy
-                    </a>
+                      IT Service & Resources
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/terms-and-condition"
+                    <Link
+                      href="/"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Terms and Condition
-                    </a>
+                      Analytics & AI Offerings
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Link 3
-                    </a>
+                      Digital Transformation
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Link 4
-                    </a>
+                      Tech Consultation
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -71,36 +86,28 @@ export const Footer = () => {
                 </h6>
                 <ul className="flex flex-col items-start sm:gap-3 gap-0.5">
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/about-us"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Link 1
-                    </a>
+                      About Us
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Link 2
-                    </a>
+                      Our Core Values
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Link 3
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
-                    >
-                      Link 4
-                    </a>
+                      Our Culture
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -110,36 +117,28 @@ export const Footer = () => {
                 </h6>
                 <ul className="flex flex-col items-start sm:gap-3 gap-0.5">
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/contact-us"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Link 1
-                    </a>
+                      Get Started
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Link 2
-                    </a>
+                      Hiring Journey
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/contact-us"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Link 3
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
-                    >
-                      Link 4
-                    </a>
+                      Request for a DEMO
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -149,36 +148,28 @@ export const Footer = () => {
                 </h6>
                 <ul className="flex flex-col items-start sm:gap-3 gap-0.5">
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Link 1
-                    </a>
+                      Get Started
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Link 2
-                    </a>
+                      Get in Touch
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
-                      Link 3
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
-                    >
-                      Link 4
-                    </a>
+                      Why partner with us?
+                    </Link>
                   </li>
                 </ul>
               </div>

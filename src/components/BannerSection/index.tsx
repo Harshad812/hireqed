@@ -1,3 +1,5 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
 import { Button } from "@/components/Button";
 
@@ -18,14 +20,31 @@ export const BannerSection = ({
   description,
   image,
   button,
-  textStyle
+  textStyle,
 }: BannerSectionProps) => {
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const headerOffset = 100;
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section className="banner-section">
       <div className="2xl:pb-[80px] xl:pb-[70px] md:pb-[60px] pb-[50px]">
         <div className="container">
           <div className="relative rounded-lg overflow-hidden 2xl:py-[120px] lg:py-[100px] py-20 2xl:px-[114px] lg:px-[100px] md:px-[60px] sm:px-[40px] px-[14px] flex flex-col justify-center">
-            <div className={`relative z-10 flex flex-col gap-8 w-full ${textStyle}`}>
+            <div
+              className={`relative z-10 flex flex-col gap-8 w-full ${textStyle}`}
+            >
               <div className="flex flex-col sm:gap-4 gap-6">
                 <h1 className="text-white font-semibold 2xl:text-[56px] xl:text-[50px] lg:text-[46px] md:text-[40px] sm:text-[36px] text-[32px] 2xl:leading-[73px] xl:leading-[63px] lg:leading-[58px] md:leading-[50px] sm:leading-[45px] leading-[42px]">
                   {title}
@@ -39,13 +58,12 @@ export const BannerSection = ({
                   <Button
                     variant="fill"
                     label={button.primaryLabel}
-                    type="submit"
                     className="sm:py-4 py-3 px-12 lg:text-base sm:text-sm text-xs font-medium sm:rounded-lg rounded text-white border-0 bg-accent-300 hover:bg-accent-200 transition-all duration-500 ease-in"
                   />
                   <Button
+                    onClick={() => handleScroll("hire-journey-start")}
                     variant="outline"
                     label={button.secondaryLabel}
-                    type="submit"
                     className="sm:py-4 py-3 px-8 lg:text-base sm:text-sm text-xs font-medium sm:rounded-lg rounded text-white border-gray-300 hover:bg-primary-300 hover:border-primary-300 transition-all duration-500 ease-in"
                   />
                 </div>

@@ -1,10 +1,15 @@
+"use client";
+
 import { Button } from "@/components/Button";
+import { useRouter } from "next/navigation";
 interface AboutUsSectionProps {
   title: string;
   withButton: boolean;
 }
 
 export const AboutUsSection = ({ title, withButton }: AboutUsSectionProps) => {
+  const router = useRouter();
+
   return (
     <section className="">
       <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
@@ -17,6 +22,7 @@ export const AboutUsSection = ({ title, withButton }: AboutUsSectionProps) => {
                 </h2>
                 {withButton && (
                   <Button
+                    onClick={() => router.push("/about-us")}
                     variant="outline"
                     label="More About Us"
                     type="submit"

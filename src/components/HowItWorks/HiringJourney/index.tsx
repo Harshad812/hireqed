@@ -9,11 +9,11 @@ interface HiringJourneyDetailsData {
   step: number;
   title: string;
   description:
-  | {
-    key: string;
-    value: string;
-  }[]
-  | string;
+    | {
+        key: string;
+        value: string;
+      }[]
+    | string;
 }
 
 const HiringJourneyDetailsData: HiringJourneyDetailsData[] = [
@@ -175,7 +175,7 @@ const HiringJourneyDetailsCard: FC<HiringJourneyDetailsCardProps> = ({
 
 export const HiringJourney = () => {
   return (
-    <section className="hero-section font-source">
+    <section className="hero-section font-source" id="hire-journey-start">
       <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
           <div className="flex flex-col gap-12">
@@ -193,7 +193,8 @@ export const HiringJourney = () => {
                       className={clsx(
                         "flex lg:flex-row flex-col-reverse justify-between items-center lg:gap-0 gap-14",
                         {
-                          "lg:flex-row-reverse flex-col-reverse": index % 2 !== 0,
+                          "lg:flex-row-reverse flex-col-reverse":
+                            index % 2 !== 0,
                         }
                       )}
                       key={index}

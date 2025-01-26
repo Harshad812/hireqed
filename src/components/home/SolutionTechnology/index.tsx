@@ -49,7 +49,7 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
   };
 
   return (
-    <section>
+    <section id="solution-technology">
       <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
           <div className="flex flex-col md:gap-12 gap-10">

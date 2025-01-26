@@ -11,7 +11,7 @@ export const HowItWorksContainer = () => {
   return (
     <div>
       <BannerSection
-        title="Effortlessly find the Right Talent with HireQED.ai"
+        title="Effortlessly find the Right Resources with HireQED.ai"
         description="Revolutionizing resource augmentation with innovative tools and top-tier talent."
         image={HireUsHeroImage}
         button={{

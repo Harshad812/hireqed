@@ -9,17 +9,22 @@ import { testimonials } from "@/constants/data";
 import { RightArrow } from "../Icons";
 
 const NextArrow = ({ onClick }: { onClick?: () => void }) => (
-  <div className="custom-arrow custom-next md:size-12 sm:size-10 size-8 rounded border border-gray-300 flex justify-center items-center cursor-pointer text-primary-400 bg-white absolute sm:top-1/2 bottom-0 sm:translate-y-[-50%] sm:right-0 right-[36%] z-10 hover:shadow-2xl transition-all duration-300 ease-in" onClick={onClick}>
+  <div
+    className="custom-arrow custom-next md:size-12 sm:size-10 size-8 rounded border border-gray-300 flex justify-center items-center cursor-pointer text-primary-400 bg-white absolute sm:top-1/2 bottom-0 sm:translate-y-[-50%] sm:right-0 right-[36%] z-10 hover:shadow-2xl transition-all duration-300 ease-in"
+    onClick={onClick}
+  >
     <RightArrow className="sm:w-[11px] w-2" />
   </div>
 );
 
 const PrevArrow = ({ onClick }: { onClick?: () => void }) => (
-  <div className="custom-arrow custom-prev md:size-12 sm:size-10 size-8 rounded border border-gray-300 flex justify-center items-center cursor-pointer text-primary-400 bg-white absolute sm:top-1/2 bottom-0 sm:translate-y-[-50%] rotate-180 sm:left-0 left-[36%] z-10 hover:shadow-2xl transition-all duration-300 ease-in" onClick={onClick}>
+  <div
+    className="custom-arrow custom-prev md:size-12 sm:size-10 size-8 rounded border border-gray-300 flex justify-center items-center cursor-pointer text-primary-400 bg-white absolute sm:top-1/2 bottom-0 sm:translate-y-[-50%] rotate-180 sm:left-0 left-[36%] z-10 hover:shadow-2xl transition-all duration-300 ease-in"
+    onClick={onClick}
+  >
     <RightArrow className="sm:w-[11px] w-2" />
   </div>
 );
-
 
 export const TestimonialsSection = () => {
   const settings: Settings = {
@@ -45,9 +50,15 @@ export const TestimonialsSection = () => {
               </h2>
             </div>
             <div className="w-full max-w-[1206px] mx-auto">
-              <Slider {...settings} className="testimonials-slider sm:px-5 sm:pb-0 pb-[90px]">
+              <Slider
+                {...settings}
+                className="testimonials-slider sm:px-5 sm:pb-0 pb-[90px]"
+              >
                 {testimonials.map((testimonial, index) => (
-                  <div className="w-full max-w-[1206px] mx-auto p-px" key={index}>
+                  <div
+                    className="w-full max-w-[1206px] mx-auto p-px"
+                    key={index}
+                  >
                     <div className="shadow-card rounded-lg overflow-hidden flex sm:flex-row flex-col lg:min-h-[422px] md:min-h-[300px] sm:min-h-[250px]">
                       <div className="w-full lg:max-w-[356px] md:max-w-[280px] sm:max-w-[200px] sm:h-auto h-[340px]">
                         <Image

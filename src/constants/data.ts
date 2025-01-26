@@ -185,9 +185,9 @@ export const servicesData = [
   },
   {
     id: 2,
-    title: "Analytics & AI Offerings",
+    title: "Analytics & AI Resources",
     description:
-      "Explore data-driven solutions with cutting-edge analytics and AI technologies to boost your business decision-making process.",
+      "Explore data-driven success by accessing top-tier analytics and AI talent to enhance your business decision-making process.",
     imageSrc: AnalyticsLogo,
     imageAlt: "AI Illustration",
     buttonLabel: "Learn More",
@@ -196,7 +196,7 @@ export const servicesData = [
     id: 3,
     title: "Digital Transformation",
     description:
-      "Accelerate your business with end-to-end digital transformation services, helping you enhance your operational efficiency.",
+      "Accelerate your business by leveraging expert resources for digital transformation, helping you enhance operational efficiency.",
     imageSrc: DigitalLogo,
     imageAlt: "Digital Transformation Image",
     buttonLabel: "Learn More",

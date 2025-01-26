@@ -1,14 +1,18 @@
+"use client";
+
 import { Button } from "@/components/Button";
 import Image from "next/image";
 import PromoImage from "./../../images/Dashboard-hero.png";
 import { FC } from "react";
 import clsx from "clsx";
+import { useRouter } from "next/navigation";
 
 interface PromoSectionProps {
   withImage?: boolean;
 }
 
 export const PromoSection: FC<PromoSectionProps> = ({ withImage }) => {
+  const router = useRouter();
   return (
     <section className="">
       <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
@@ -42,6 +46,7 @@ export const PromoSection: FC<PromoSectionProps> = ({ withImage }) => {
                 </div>
                 <div className="flex sm:flex-row flex-col xl:gap-6 sm:gap-5 gap-4">
                   <Button
+                    onClick={() => router.push("/contact-us")}
                     variant="outline"
                     label="Request a Demo"
                     type="submit"

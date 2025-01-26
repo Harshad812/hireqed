@@ -1,10 +1,30 @@
+"use client";
+
 import Image from "next/image";
 import heroBg from "../../../images/bg-home.png";
 import dashboardImage from "../../../images/Dashboard-hero.png";
 import { Button } from "@/components/Button";
 import { TypewriterText } from "@/components/TypewriterText";
+import { useRouter } from "next/navigation";
 
 export const HeroSection = () => {
+  const router = useRouter();
+
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const headerOffset = 100;
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section className="hero-section">
       <div className="2xl:pb-[80px] xl:pb-[70px] md:pb-[60px] pb-[50px]">
@@ -14,7 +34,7 @@ export const HeroSection = () => {
               <div className="xl:pt-[120px] lg:pt-[90px] pt-[80px] xl:pb-[100px] lg:pb-[80px] pb-[60px] lg:px-[70px] sm:px-[60px] px-[15px] flex flex-col gap-8">
                 <div className="">
                   <h1 className="2xl:text-[64px] xl:text-6xl lg:text-5xl md:text-4xl text-[32px] 2xl:leading-[96px] xl:leading-snug lg:leading-snug md:leading-snug leading-snug md:text-start text-center font-semibold text-white">
-                    We simplify your search for the right talent{" "}
+                    We simplify your search for the right resources{" "}
                     <span className="text-accent-300 inline">
                       <TypewriterText
                         texts={[
@@ -30,7 +50,8 @@ export const HeroSection = () => {
                 <div className="">
                   <p className="text-gray-200 xl:text-xl lg:text-lg text-base font-normal font-source text-center">
                     In today’s fast-paced business world, finding the right
-                    resources can be challenging. <br className="lg:block hidden" />
+                    resources can be challenging.{" "}
+                    <br className="lg:block hidden" />
                     At HireQED.ai, we make it easy-connecting you with the
                     perfect match for any project, whether short-term or
                     long-term.
@@ -38,12 +59,14 @@ export const HeroSection = () => {
                 </div>
                 <div className="flex md:flex-row flex-col justify-center lg:gap-6 md:gap-5 gap-4">
                   <Button
+                    onClick={() => router.push("/contact-us")}
                     variant="outline"
                     label="Request a Demo"
                     type="submit"
                     className="sm:py-4 py-3 px-8 lg:text-base sm:text-sm text-xs leading-5 font-medium rounded-lg text-white border-gray-300 hover:bg-primary-300 hover:border-primary-300 transition-all duration-500 ease-in"
                   />
                   <Button
+                    onClick={() => handleScroll("solution-technology")}
                     variant="fill"
                     label="Learn More"
                     type="submit"
