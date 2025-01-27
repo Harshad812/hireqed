@@ -34,10 +34,10 @@ export const Footer = () => {
                     Privacy Policy
                   </Link>
                   <Link
-                    href="/privacy-policy"
+                    href="/terms-and-condition"
                     className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                   >
-                    Terms & Conditions
+                    Terms of Use
                   </Link>
                 </div>
               </div>

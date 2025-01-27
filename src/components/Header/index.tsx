@@ -49,7 +49,7 @@ export const Header = () => {
   ];
 
   return (
-    <header className="sm:py-8 py-6 bg-white fixed top-0 left-0 w-full z-999">
+    <header className="sm:py-8 py-6 bg-white fixed top-0 left-0 w-full z-999 shadow-[0px_1px_1px_rgba(0,0,0,0.1)] ">
       <div className="container">
         <div className="flex items-center justify-between">
           <div className="logo">
