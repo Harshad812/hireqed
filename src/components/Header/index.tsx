@@ -35,7 +35,7 @@ export const Header = () => {
       href: "/about-us",
     },
     {
-      name: "Hire Talent",
+      name: "Hire Resources",
       href: "/hire-from-us",
     },
     {

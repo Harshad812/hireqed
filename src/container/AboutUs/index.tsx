@@ -1,9 +1,4 @@
-import {
-  AboutUsSection,
-  BannerSection,
-  PromoSection,
-  TestimonialsSection,
-} from "@/components";
+import { AboutUsSection, BannerSection, PromoSection } from "@/components";
 import { OurCoreValues, OurCulture, OurSection } from "@/components/AboutUs";
 import { AboutUsHeroImage } from "@/images";
 
@@ -23,7 +18,7 @@ export const AboutUsContainer = () => {
         withButton={false}
       />
       <OurCulture />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <PromoSection />
     </div>
   );

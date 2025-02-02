@@ -79,11 +79,8 @@ import {
   MoneyBagIcon,
   EarthWithStandIcon,
   PointerArrow,
-  FacebookIcon,
   TwitterIcon,
-  InstagramIcon,
   LinkdinIcon,
-  YoutubeIcon,
 } from "@/components/Icons";
 
 export const titleData = [
@@ -187,7 +184,7 @@ export const servicesData = [
     id: 2,
     title: "Analytics & AI Resources",
     description:
-      "Explore data-driven success by accessing top-tier analytics and AI talent to enhance your business decision-making process.",
+      "Explore data-driven success by accessing top-tier analytics and AI resources to enhance your business decision-making process.",
     imageSrc: AnalyticsLogo,
     imageAlt: "AI Illustration",
     buttonLabel: "Learn More",
@@ -242,7 +239,7 @@ export const whyUsData = [
     logo: rocketIcon,
     title: "Efficiency at Speed",
     description:
-      "Accelerate your hiring process and secure the right talent swiftly, allowing you to focus on driving your projects to success.",
+      "Accelerate your hiring process and secure the right resources swiftly, allowing you to focus on driving your projects to success.",
     stroke: true,
   },
   {
@@ -296,29 +293,29 @@ export const testimonials = [
 ];
 
 export const socialMediaData = [
-  {
-    id: 1,
-    link: "/",
-    logo: FacebookIcon,
-  },
+  // {
+  //   id: 1,
+  //   link: "/",
+  //   logo: FacebookIcon,
+  // },
   {
     id: 2,
     link: "https://x.com/HireQEDai",
     logo: TwitterIcon,
   },
-  {
-    id: 3,
-    link: "/",
-    logo: InstagramIcon,
-  },
+  // {
+  //   id: 3,
+  //   link: "/",
+  //   logo: InstagramIcon,
+  // },
   {
     id: 4,
     link: "https://www.linkedin.com/company/hireqed-ai",
     logo: LinkdinIcon,
   },
-  {
-    id: 5,
-    link: "/",
-    logo: YoutubeIcon,
-  },
+  // {
+  //   id: 5,
+  //   link: "/",
+  //   logo: YoutubeIcon,
+  // },
 ];

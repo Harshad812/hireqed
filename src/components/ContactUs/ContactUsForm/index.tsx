@@ -164,16 +164,16 @@ export const ContactUsForm = () => {
                   <ul className="xl:*:text-xl sm:text-lg text-base xl:*:leading-[30px] *:font-normal *:font-source *:text-gray-600">
                     <li>
                       <span className="font-semibold">General Inquiries:</span>{" "}
-                      info@hireqed.ai
+                      Info@hireqed.ai
                     </li>
-                    <li>
+                    {/* <li>
                       <span className="font-semibold">Support:</span>{" "}
                       support@hireqed.ai
                     </li>
                     <li>
                       <span className="font-semibold">Partnerships:</span>{" "}
                       partners@hireqed.ai
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
                 <div className="flex flex-col gap-3">
@@ -182,24 +182,29 @@ export const ContactUsForm = () => {
                   </h6>
                   <ul className="xl:*:text-xl sm:text-lg text-base xl:*:leading-[30px] *:font-normal *:font-source *:text-gray-600">
                     <li>
-                      <span className="font-semibold">USA:</span> +1 (800)
-                      123-4567
+                      <span className="font-semibold">India:</span>
+                      +91 8427250908
                     </li>
                     <li>
-                      <span className="font-semibold">UK:</span> +44 (20) 1234
-                      5678
+                      <span className="font-semibold">USA:</span>
+                      +1 845 557 7075
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <h6 className="text-primary-400 text-xl font-medium">
+                    Address
+                  </h6>
+                  <ul className="xl:*:text-xl sm:text-lg text-base xl:*:leading-[30px] *:font-normal *:font-source *:text-gray-600">
+                    <li>
+                      <span className="font-semibold">USA:</span>
+                      HireQED Consulting Services LLC, 30 N Gould St Ste R
+                      Sheridan, WY 82801
                     </li>
                     <li>
-                      <span className="font-semibold">UAE:</span> +971 (4) 123
-                      4567
-                    </li>
-                    <li>
-                      <span className="font-semibold">Saudi Arabia:</span> +966
-                      (11) 123 4567
-                    </li>
-                    <li>
-                      <span className="font-semibold">India:</span> +91 (124)
-                      123 4567
+                      <span className="font-semibold">India:</span>
+                      HireQED Technologies Private limited, 704, Team Co.work,
+                      DLF, Palm Court, Sec 16, Gurgaon, Haryana 122007
                     </li>
                   </ul>
                 </div>

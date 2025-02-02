@@ -3,7 +3,6 @@ import {
   ExperienceEfficiency,
   HiringJourney,
   PromoSection,
-  TestimonialsSection,
 } from "@/components";
 import { HireUsHeroImage } from "@/images";
 
@@ -22,7 +21,7 @@ export const HowItWorksContainer = () => {
       />
       <HiringJourney />
       <ExperienceEfficiency />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <PromoSection withImage />
     </div>
   );
