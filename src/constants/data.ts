@@ -319,3 +319,30 @@ export const socialMediaData = [
   //   logo: YoutubeIcon,
   // },
 ];
+
+export const OurProcessData = [
+  {
+    step: "STEP 1",
+    title: "Get in Touch",
+    description:
+      "Reach out to our team to talk about the best way we can work together. We'll see how our partnership can fit your business goals and the unique value you can offer. Our team will help you step-by-step through the onboarding process, making sure everything starts smoothly and easily.",
+  },
+  {
+    step: "STEP 2",
+    title: "Add your Resources",
+    description:
+      "Start by adding your resources to our platform. Whether you have IT professionals, consultants, product developers, researchers, or other specialists, we welcome a wide range of talents. Our simple, user-friendly interface allows you to upload resource information quickly and accurately.",
+  },
+  {
+    step: "STEP 3",
+    title: "Complete Resource Profiles",
+    description:
+      "Create detailed profiles for each of your resources, including their qualifications, experience, skills, certifications, and other relevant details that help clients make informed choices. Well-documented profiles boost visibility and improve the chances of your resources being selected for projects.",
+  },
+  {
+    step: "STEP 4",
+    title: "Go Live",
+    description:
+      "Once your resources are onboarded and the profiles are complete, you’re all set to go live on our platform. Start connecting with clients and discovering new opportunities. Our platform streamlines the entire process, from initial engagement to project delivery.",
+  },
+];
