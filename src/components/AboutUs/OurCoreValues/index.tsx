@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const OurCoreValues = () => {
   return (
-    <section>
+    <section id="our-core-values">
       <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
           <div className="flex flex-col 2xl:gap-12 lg:gap-10 sm:gap-9 gap-8 w-full mx-auto xl:max-w-[1046px] xl:px-0 sm:px-5 px-[18px]">

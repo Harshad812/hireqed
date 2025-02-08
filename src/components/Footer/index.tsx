@@ -1,9 +1,17 @@
+"use client";
 import { socialMediaData } from "@/constants/data";
 import { Logo } from "@/images";
 import Image from "next/image";
 import Link from "next/link";
 
 export const Footer = () => {
+  const services = [
+    { name: "IT Service & Resources", query: "IT Services & Resources" },
+    { name: "Analytics & AI Resources", query: "Analytics & AI Resources" },
+    { name: "Digital Transformation", query: "Digital Transformation" },
+    { name: "Tech Consultation", query: "Tech Consultation" },
+  ];
+
   return (
     <section className="2xl:pt-[80px] xl:pt-[70px] md:pt-[60px] pt-[50px]">
       <div className="bg-primary-900 sm:pt-20 pt-14 lg:pb-20 md:pb-14 sm:pb-12 pb-10">
@@ -46,38 +54,19 @@ export const Footer = () => {
                   Solutions
                 </h6>
                 <ul className="flex flex-col items-start sm:gap-3 gap-0.5">
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
-                    >
-                      IT Service & Resources
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
-                    >
-                      Analytics & AI Offerings
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
-                    >
-                      Digital Transformation
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
-                    >
-                      Tech Consultation
-                    </Link>
-                  </li>
+                  {services.map(({ name, query }) => (
+                    <li key={query}>
+                      <Link
+                        href={{
+                          pathname: "/",
+                          query: { service: query },
+                        }}
+                        className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
+                      >
+                        {name}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="flex flex-col items-start gap-0.5">
@@ -95,7 +84,7 @@ export const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/about-us/#our-core-values"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Our Core Values
@@ -103,7 +92,7 @@ export const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/about-us/#our-culture"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Our Culture
@@ -126,7 +115,7 @@ export const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/hire-from-us/#hire-journey-start"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Hiring Journey
@@ -149,7 +138,7 @@ export const Footer = () => {
                 <ul className="flex flex-col items-start sm:gap-3 gap-0.5">
                   <li>
                     <Link
-                      href="#"
+                      href="/contact-us"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Get Started
@@ -157,7 +146,7 @@ export const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/partner-with-us/#our-process"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Get in Touch
@@ -165,7 +154,7 @@ export const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/partner-with-us/#why-partner-with-us"
                       className="text-primary-400 inline-block lg:px-2.5 sm:py-2.5 py-2 sm:text-base text-[10px] font-medium hover:text-primary-200 transition-all duration-300 ease-in"
                     >
                       Why partner with us?

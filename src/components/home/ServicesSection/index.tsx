@@ -1,8 +1,11 @@
+"use client";
 import Image, { StaticImageData } from "next/image";
 import { Button } from "@/components/Button";
 import { Tabs } from "@/components/Tabs";
 import { servicesData } from "@/constants/data";
 import { IllustrationImage } from "@/images";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 interface ContentProps {
   title: string;
@@ -54,8 +57,33 @@ export const Content: React.FC<ContentProps> = ({
 };
 
 export const ServicesSection = () => {
+  const searchParams = useSearchParams();
+  const serviceQuery = searchParams.get("service");
+  const [selectedTab, setSelectedTab] = useState(0);
+
+  const scrollToServices = (serviceName: string) => {
+    const newUrl = `/?service=${encodeURIComponent(serviceName)}#services`;
+    window.history.pushState(null, "", newUrl);
+    const target = document.getElementById("services");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  useEffect(() => {
+    if (serviceQuery) {
+      scrollToServices(serviceQuery);
+      const tabIndex = servicesData.findIndex(
+        (service) => service.title.toLowerCase() === serviceQuery.toLowerCase()
+      );
+      if (tabIndex !== -1) {
+        setSelectedTab(tabIndex);
+      }
+    }
+  }, [serviceQuery]);
+
   return (
-    <section className="">
+    <section className="" id="services">
       <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
           <div className="flex flex-col md:gap-12 gap-10">
@@ -68,7 +96,10 @@ export const ServicesSection = () => {
               <div className="2xl:py-[61px] lg:py-12 md:py-10 sm:py-7 py-4 laptop:ps-[60px] 2xl:ps-[50px] lg:ps-[30px] laptop:pe-[60px] 2xl:pe-[30px] xl:pe-[30px] w-full 2xl:max-w-[calc(100%-440px)] lg:max-w-[calc(100%-400px)]">
                 <div className="flex flex-col gap-20">
                   {/* Loop through servicesData */}
-                  <Tabs tabs={servicesData.map((item) => item.title)}>
+                  <Tabs
+                    tabs={servicesData.map((item) => item.title)}
+                    defaultIndex={selectedTab}
+                  >
                     {servicesData.map((service) => (
                       <div key={service.id}>
                         <Content
@@ -94,7 +125,7 @@ export const ServicesSection = () => {
             </div>
           </div>
         </div>
-      </div >
-    </section >
+      </div>
+    </section>
   );
 };

@@ -64,7 +64,7 @@ export const OurProcess = () => {
     ],
   };
   return (
-    <section>
+    <section id="our-process">
       <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
           <div className="xl:bg-primary-gradient xl:rounded-lg 2xl:py-[88px] xl:py-20 2xl:px-[118px] xl:px-[100px]">

@@ -26,7 +26,7 @@ export const OurCulture = () => {
     },
   ];
   return (
-    <section>
+    <section id="our-culture">
       <div className="2xl:py-[80px] xl:py-[70px] md:py-[60px] py-[50px]">
         <div className="container">
           <div className="flex flex-col 2xl:gap-12 lg:gap-10 sm:gap-9 gap-8 sm:px-0 px-[18px]">
