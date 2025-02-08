@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Slider, { Settings } from "react-slick";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
@@ -27,7 +27,7 @@ const PrevArrow = ({ onClick }: { onClick?: () => void }) => (
 );
 
 export const TestimonialsSection = () => {
-  const settings: Settings = {
+  const settings = {
     dots: false,
     arrows: true,
     infinite: false,

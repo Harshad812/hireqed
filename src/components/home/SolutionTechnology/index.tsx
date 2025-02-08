@@ -2,9 +2,9 @@
 
 import React, { FC, useRef, useState } from "react";
 import Image from "next/image";
-import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 interface TitleData {
   id: number;
@@ -26,10 +26,10 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
   titleData,
   languagesIconData,
 }) => {
-  const sliderRef = useRef<Slider | null>(null);
+  const sliderRef = useRef<any | null>(null as any | null);
   const [selectedTab, setSelectedTab] = useState<number>(0);
 
-  const sliderSettings: Settings = {
+  const sliderSettings = {
     dots: false,
     arrows: false,
     infinite: true,
@@ -38,7 +38,8 @@ export const SolutionTechnology: FC<SolutionTechnologyProps> = ({
     slidesToScroll: 1,
     autoplay: true,
     adaptiveHeight: true,
-    beforeChange: (_, next) => setSelectedTab(next), // Sync slider index with active tab
+    beforeChange: (_: any, next: React.SetStateAction<number>) =>
+      setSelectedTab(next),
   };
 
   const handleMenuClick = (index: number) => {
