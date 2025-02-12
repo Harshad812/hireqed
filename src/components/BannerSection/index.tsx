@@ -2,6 +2,7 @@
 
 import Image, { StaticImageData } from "next/image";
 import { Button } from "@/components/Button";
+import { useRouter } from "next/navigation";
 
 interface BannerSectionProps {
   title: string;
@@ -22,20 +23,7 @@ export const BannerSection = ({
   button,
   textStyle,
 }: BannerSectionProps) => {
-  const handleScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const headerOffset = 100;
-      const elementPosition =
-        element.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
+  const router = useRouter();
 
   return (
     <section className="banner-section">
@@ -56,12 +44,15 @@ export const BannerSection = ({
               {button && (
                 <div className="flex sm:flex-row flex-col sm:gap-6 gap-4 sm:px-0 px-[13px]">
                   <Button
+                    onClick={() => router.push("/contact-us")}
                     variant="fill"
                     label={button.primaryLabel}
                     className="sm:py-4 py-3 px-12 lg:text-base sm:text-sm text-xs font-medium sm:rounded-lg rounded text-white border-0 bg-accent-300 hover:bg-accent-200 transition-all duration-500 ease-in"
                   />
                   <Button
-                    onClick={() => handleScroll("hire-journey-start")}
+                    onClick={() =>
+                      router.push("/hire-from-us/#hire-journey-start")
+                    }
                     variant="outline"
                     label={button.secondaryLabel}
                     className="sm:py-4 py-3 px-8 lg:text-base sm:text-sm text-xs font-medium sm:rounded-lg rounded text-white border-gray-300 hover:bg-primary-300 hover:border-primary-300 transition-all duration-500 ease-in"

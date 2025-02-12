@@ -182,12 +182,12 @@ export const ContactUsForm = () => {
                   </h6>
                   <ul className="xl:*:text-xl sm:text-lg text-base xl:*:leading-[30px] *:font-normal *:font-source *:text-gray-600">
                     <li>
-                      <span className="font-semibold">India:</span>
-                      +91 8427250908
+                      <span className="font-semibold">India:</span> +91
+                      8427250908
                     </li>
                     <li>
-                      <span className="font-semibold">USA:</span>
-                      +1 845 557 7075
+                      <span className="font-semibold">USA:</span> +1 845 557
+                      7075
                     </li>
                   </ul>
                 </div>
@@ -195,16 +195,16 @@ export const ContactUsForm = () => {
                   <h6 className="text-primary-400 text-xl font-medium">
                     Address
                   </h6>
-                  <ul className="xl:*:text-xl sm:text-lg text-base xl:*:leading-[30px] *:font-normal *:font-source *:text-gray-600">
+                  <ul className="xl:*:text-xl sm:text-lg text-base xl:*:leading-[30px] *:font-normal *:font-source *:text-gray-600 flex flex-col gap-4">
                     <li>
-                      <span className="font-semibold">USA:</span>
-                      HireQED Consulting Services LLC, 30 N Gould St Ste R
-                      Sheridan, WY 82801
+                      <span className="font-semibold">USA:</span> HireQED
+                      Consulting Services LLC, 30 N Gould St Ste R Sheridan, WY
+                      82801
                     </li>
                     <li>
-                      <span className="font-semibold">India:</span>
-                      HireQED Technologies Private limited, 704, Team Co.work,
-                      DLF, Palm Court, Sec 16, Gurgaon, Haryana 122007
+                      <span className="font-semibold">India:</span> HireQED
+                      Technologies Private limited, 704, Team Co.work, DLF, Palm
+                      Court, Sec 16, Gurgaon, Haryana 122007
                     </li>
                   </ul>
                 </div>
